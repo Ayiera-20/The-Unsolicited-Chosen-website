@@ -1,1 +1,59 @@
 @import "tailwindcss";
+
+
+@font-face {
+    font-family: "Karla";
+    src: url("./assets/fonts/Karla-Regular.ttf") format("truetype");
+    font-weight: normal;
+  }
+  
+  @font-face {
+    font-family: "Karla";
+    src: url("./assets/fonts/Karla-Bold.ttf") format("truetype");
+    font-weight: bold;
+  }
+  
+  @font-face {
+    font-family: "Poppins";
+    src: url("./assets/fonts/Poppins-Regular.ttf") format("truetype");
+    font-weight: normal;
+  }
+  
+  @font-face {
+    font-family: "Poppins";
+    src: url("./assets/fonts/Poppins-Bold.ttf") format("truetype");
+    font-weight: bold;
+  }
+  
+
+  body {
+    font-family: "Karla", sans-serif;
+    color: #384b38;
+  }
+  h1{
+    font-family: "Poppins", sans-serif;
+
+  }
+   h1,h2, h3, h4, h5, h6 {
+    font-family: "Poppins", sans-serif;
+  }
+  
+
+  .btn-primary {
+    background-color: #384b38;
+    color: white;
+    font-weight: bold;
+    padding: 1rem 2rem; /* py-4 px-8 */
+    border-radius: 9999px; /* rounded-full */
+    font-size: 1rem;
+  }
+
+  .sub-sub-headings{
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+  
+
+  }
+
+
+  
