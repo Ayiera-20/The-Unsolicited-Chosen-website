@@ -13,10 +13,10 @@ const HeroSection = () => {
 
             </div>
             
-            <div className="relative flex flex-col items-center justify-center h-full text-white text-center">
+            <div className="items-center relative flex flex-col justify-center h-full text-white text-center">
                 <p className="font-bold text-[32px]">Welcome</p>
-                <h1 className="font-bold md:text-[64px]">Cleaning Nairobi. Restoring Dignity. <br></br>Inspiring Change.</h1>
-                <button className="border-2 border-[#799434] px-12 py-4 md:text-2xl font-bold mt-16 backdrop-blur-md">Discover</button>
+                <h1 className="md:text-[64px]">Cleaning Nairobi. Restoring Dignity. <br></br>Inspiring Change.</h1>
+                <button className="discover-button">Discover</button>
             </div>
 
         </div>
