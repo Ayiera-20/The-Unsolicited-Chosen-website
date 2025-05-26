@@ -56,4 +56,21 @@
   }
 
 
-  
+  .discover-button {
+  border: 2px solid #799434;
+  padding: 0.5rem 3rem; /* py-4 = 1rem top/bottom, px-12 = 3rem left/right */
+  font-weight: bold;
+  margin-top: 4rem; /* mt-16 = 4rem */
+  backdrop-filter: blur(12px); /* Matches backdrop-blur-md */
+  font-size: 1.5rem; /* md:text-2xl = 1.5rem (applied on medium screens) */
+}
+
+/* Media query for md breakpoint (768px) */
+@media (min-width: 768px) {
+  .discover-button {
+    font-size: 1.5rem;
+  }
+}
+
+
+
