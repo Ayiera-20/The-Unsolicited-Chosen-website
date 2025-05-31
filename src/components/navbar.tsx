@@ -14,9 +14,10 @@ export default function NavBar() {
                 <ul className="flex-row justify-between hidden lg:flex gap-14 text-[20px] text-white font-medium">
                     <Link to="/" className="">Home</Link>
                      <Link to="/about" className="">About</Link>
-                    <li>What we do</li>
+                     <Link to="/whatwedo" className="">What we do</Link>
+                     <Link to="/getinvolved" className="">Get Involved</Link>
                     <li>Projects</li>
-                    <li>Get Involved</li>
+          
                 </ul>
             </nav>
             <div className="gap-x-4  hidden lg:flex ">
