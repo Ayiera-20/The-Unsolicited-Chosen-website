@@ -26,7 +26,7 @@ const DrawerMenu = ({ className = "" }: DrawerMenu) => {
 
       {/* Drawer */}
       <div
-        className={`fixed top-0 left-0 h-full w-1/2 bg-[#f4eddd] shadow-lg z-50 p-6 transform transition-transform duration-300 ease-in-out ${
+        className={`fixed top-0 left-0 h-full w-1/2 bg-[#F5FAF6] shadow-lg z-50 p-6 transform transition-transform duration-300 ease-in-out ${
           isOpen ? "translate-x-0" : "-translate-x-full"
         } lg:hidden`}
       >
