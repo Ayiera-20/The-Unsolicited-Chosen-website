@@ -15,7 +15,7 @@ const items = [
 
 const WhyUnsolicited = () =>{
     return (
-        <div className="relative h-screen w-full bg-cover bg-center bg-no-repeat text-white items-center text-center flex flex-col" 
+        <div className="relative h-screen w-full bg-cover bg-center bg-no-repeat bg-fixed text-white items-center text-center flex flex-col" 
         style={{backgroundImage: `url(${cleaningImage})`}}>
              <div className="absolute inset-0 bg-black/50"></div>
              <h2 className="relative text-white lg:text-[50px] py-20">Why the Unsolicited Chosen</h2>
