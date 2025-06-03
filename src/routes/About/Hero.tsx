@@ -3,7 +3,8 @@ import NavBar from "../../components/navbar";
 
 const Hero = () => {
     return(
-        <div> <div className="relative h-screen w-full bg-cover bg-center bg-no-repeat"
+        <div> 
+            <div className="relative h-screen w-full bg-cover bg-center bg-no-repeat"
         style={{backgroundImage: `url(${recyc})`}}
         >
             <NavBar />
@@ -27,7 +28,8 @@ const Hero = () => {
 
             </div>
             
-        </div></div>
+        </div>
+        </div>
     )
 }
 

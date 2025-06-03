@@ -17,6 +17,7 @@ const GetInvolved = () => {
                     heading="Get Involved"
                     description="Be part of the change."
                     description2="Serve, give, grow."
+                    button="Join Us"
                     height="h-screen"
                 />
             </div>
@@ -32,7 +33,7 @@ const GetInvolved = () => {
             
 
         </div>
-    )
+    );
 }
 
 export default GetInvolved;

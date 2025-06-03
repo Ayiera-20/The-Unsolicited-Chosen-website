@@ -5,6 +5,7 @@ type ReusableHeroSectionProps = {
   heading: string;
   description: string;
   description2: string;
+  button: string;
   height?: string;
 };
 
@@ -13,6 +14,7 @@ const ReusableHeroSection = ({
   heading,
   description,
   description2,
+  button,
   height = 'h-screen',
 }: ReusableHeroSectionProps) => {
   return (
@@ -29,6 +31,7 @@ const ReusableHeroSection = ({
                 <h1 className="md:text-[64px] pb-6">{heading}</h1>
                 <p className=" text-[32px]">{description}</p>
                 <p className=" text-[32px]">{description2}</p>
+                <button className="discover-button">{button}</button>
             </div>
 
         </div>
