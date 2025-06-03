@@ -11,30 +11,30 @@ const teamMembers = [
     {image:profile, role: "Founder", name: "Jenny Otinda", 
         description: "Team volunteering not only allows for greater impact but also fosters camaraderie and teamwork among participants.",
         socialLinks:{
-        twitter: "https://twitter.com/devbob",
-        instagram: "https://instagram.com/devbob",
-        linkedin: "https://linkedin.com/in/bob"
+        twitter: "https://twitter.com",
+        instagram: "https://instagram.com",
+        linkedin: "https://linkedin.com"
     } },
     {image:profile,role: "Software Developer", name: "Miriam Ayiera", 
         description: "Team volunteering not only allows for greater impact but also fosters camaraderie and teamwork among participants.",
         socialLinks:{
-        twitter: "https://twitter.com/devbob",
-        instagram: "https://instagram.com/devbob",
-        linkedin: "https://linkedin.com/in/bob"
+        twitter: "https://twitter.com",
+        instagram: "https://instagram.com",
+        linkedin: "https://linkedin.com"
     } },
      {image:profile, role: "PR", name: "Hope", 
         description: "Team volunteering not only allows for greater impact but also fosters camaraderie and teamwork among participants.",
         socialLinks:{
-        twitter: "https://twitter.com/devbob",
-        instagram: "https://instagram.com/devbob",
-        linkedin: "https://linkedin.com/in/bob"
+        twitter: "https://twitter.com",
+        instagram: "https://instagram.com",
+        linkedin: "https://linkedin.com"
     } },
      {image:profile, role: "Finance", name: "John", 
         description: "Team volunteering not only allows for greater impact but also fosters camaraderie and teamwork among participants.",
         socialLinks:{
-        twitter: "https://twitter.com/devbob",
-        instagram: "https://instagram.com/devbob",
-        linkedin: "https://linkedin.com/in/bob"
+        twitter: "https://twitter.com",
+        instagram: "https://instagram.com",
+        linkedin: "https://linkedin.com"
     } },
      {image:profile, role: "Graphic Designer", name: "Jackline", 
         description: "Team volunteering not only allows for greater impact but also fosters camaraderie and teamwork among participants.",
