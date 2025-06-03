@@ -9,7 +9,7 @@ const SendMessage = () => {
                         <input className="placeholder:font-semibold bg-white p-2" id="name" type="name" placeholder="Your Name" />
                         <input className="placeholder:font-bold bg-white p-2" id="email" type="email" placeholder="Your Email" />
                         <textarea className="placeholder:font-bold bg-white p-2" id="message" name="tmessage" rows={4} placeholder="Your Message" />
-                        <button className="mx-30 py-4 px-8 rounded-full bg-[#afdfaa] text-black border-transparent hover:bg-transparent hover:text-[#afdfaa] hover:border-2 hover:border-[#afdfaa] font-bold" >Submit</button>
+                        <button className="mx-30 py-4 px-8 rounded-full bg-[#afdfaa] text-black border-transparent hover:bg-transparent hover:text-[#afdfaa] border-2 hover:border-[#afdfaa] font-bold" >Submit</button>
                     </form>
                
                 {/* <div className="absolute h-[70vh] w-full bg-cover bg-center bg-no-repeat px-20 py-30 "
