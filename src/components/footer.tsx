@@ -22,7 +22,7 @@ const Footer = () =>{
                 </div>
                 <div className='flex flex-col gap-2 text-lg font-semibold'>
                     <p className='sub-sub-headings text-[20px]'>What-we-do</p>
-                    <a href="">Home</a>
+                    <a href="hover:text-[#afdfaa]">Home</a>
                     <a href="">About Us</a>
                     <a href="">What we do</a>
                     <a href="">Programs</a> 
@@ -33,7 +33,7 @@ const Footer = () =>{
                     <a href="">theunsolicitedchosen@gmail.com</a>
                     <a href="">theunsolicitedchosen@outlook.com</a>
                     <button className="mr-20 mt-6 py-4 px-8 rounded-full bg-[#afdfaa] text-black border-transparent
-                     hover:bg-transparent hover:text-white hover:border-2 hover:border-[#afdfaa]" >Contact Us
+                     hover:bg-transparent hover:text-white border-2 hover:border-[#afdfaa]" >Contact Us
                      </button>
                 </div>
 
