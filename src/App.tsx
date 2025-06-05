@@ -6,6 +6,7 @@ import WhatWeDo from './routes/What_We_Do/What_We_Do'
 import GetInvolved from './routes/Get_Involved/Get_Involved'
 import ContactUs from './routes/Contact/ContactUs'
 import Donate from './routes/Donate/Donate'
+import AffordableWaste from './routes/What_We_Do/WhatWeDoPages/AffrordableWaste'
 
 function App() {
 
@@ -19,6 +20,7 @@ function App() {
         <Route path="getinvolved" element={<GetInvolved />} />
         <Route path="Contact" element={<ContactUs />} />
         <Route path="donate" element={<Donate/>} />
+        <Route path="affordablewaste" element={<AffordableWaste/>} />
       </Routes>
     </BrowserRouter>
   )
