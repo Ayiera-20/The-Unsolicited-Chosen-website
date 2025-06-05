@@ -14,10 +14,10 @@ const Hero = () => {
                     <h1 className="text-[36px] pl-10">About</h1>
                     </div>
                 <div>
-                    <p className="text-[45px] max-w-117">Grassroots, <br></br> faith-inspired NGO</p>
+                    <p className="text-[45px] max-w-117 text-[#F5F1E3]">Grassroots, <br></br> faith-inspired NGO</p>
                 </div>
                 <div className="flex items-start space-x-8">
-                    <div className="w-0.5 h-60 bg-[#799434]"></div>
+                    <div className="w-0.5 h-60 bg-[#818F39]"></div>
                     <div>
                         <p className="mb-2 text-2xl max-w-117">
                         Committed to transforming Nairobi through cleaner spaces, empowered communities, and practical hope

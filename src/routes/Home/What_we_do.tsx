@@ -25,14 +25,14 @@ const WhatWeDo = () => {
     return (
         <div className="px-20 py-30">
             <div className="flex gap-100 justify-end items-center pl-30 pb-18 ">
-                <h2 className=" lg:text-[50px] text-black">What we do</h2>
+                <h2 className=" lg:text-[50px] text-[#184E35]">What we do</h2>
                 <button className="btn-primary">Our Services</button>
             </div>
             <div className=" grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1  space-y-10 justify-center  items-stretch h-full">
                 {items.map((item, index) => (
                     <div key={index} className="flex flex-col justify-center items-center text-center gap-4 h-full">
                         <img className="w-12 h-12 t-10" src={item.icon} alt={item.title} />
-                        <p className="text-2xl sub-sub-headings">{item.title}</p>
+                        <p className="text-2xl sub-sub-headings text-[#184E35]">{item.title}</p>
                         <p className="text-lg w-71 ]">{item.description}</p>
 
                     </div>

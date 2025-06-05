@@ -16,7 +16,7 @@ const SpreadWord = () =>{
                                     href="#"
                                     target="_blank"
                                     rel="noopener noreferrer"
-                                    className="bg-white text-green-900  p-3 shadow-md hover:bg-green-100 transition duration-300"
+                                    className="bg-white text-[#184E35]  p-3 shadow-md hover:bg-[#A3B18A] transition duration-300"
                                     >
                                     <Icon className="text-xl" />
                                     </a>

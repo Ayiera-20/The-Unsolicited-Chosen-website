@@ -1,10 +1,10 @@
 import { useState } from "react";
 import clean from "../../assets/images/Happy volunteers cleaning city park from garbage.jpg"
 const buttonColors = [
-  { bg: "bg-[#afdfaa]", text: "text-black", border: "border-[#afdfaa]" }, // Who we are
-  { bg: "bg-[#A3C9A8]", text: "text-black", border: "border-[#A3C9A8]" }, // Mission
-  { bg: "bg-[#799434]", text: "text-white", border: "border-[#799434]" }, // Vision
-  { bg: "bg-[#384B38]", text: "text-white", border: "border-[#384B38]" }, // Values
+  { bg: "bg-[#184E35]", text: "text-white", border: "border-[#184E35]" }, // Who we are
+  { bg: "bg-[#A3B18A]", text: "text-black", border: "border-[#A3B18A]" }, // Mission
+  { bg: "bg-[#799434]", text: "text-white", border: "border-[#818F39]" }, // Vision
+  { bg: "bg-[#F5F1E3]", text: "text-black", border: "border-[#F5F1E3]" }, // Values
 ];
 
 const slides  = [
@@ -51,7 +51,7 @@ const Mission = () => {
             </div>
             
             <div className="mt-20 ml-3.5">
-                <h2 className="font-bold lg:text-2xl mb-8">{slides[selectedIndex].heading}</h2>
+                <h2 className="font-bold lg:text-2xl mb-8 text-[#184E35]">{slides[selectedIndex].heading}</h2>
                 <div className="lg:text-lg font-medium max-w-142">
                     {slides[selectedIndex].text}
                 </div>

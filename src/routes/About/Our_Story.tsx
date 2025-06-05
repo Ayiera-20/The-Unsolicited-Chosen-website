@@ -4,7 +4,7 @@ import person from "../../assets/images/pexels-safari-consoler-3290243-12411818.
 const OurStory = () => {
     return (
         <div className="bg-[#F5FAF6] px-20 py-30">
-            <h1 className="text-[64px] text-black mb-20 text-center">Our Story</h1>
+            <h1 className="text-[64px] text-[#184E35] mb-20 text-center">Our Story</h1>
             <div className="flex flex-col md:flex-row gap-20">
                 <img className="w-120 h-100" src={sustainable} alt="" />
                 <div className="gap-y-8 px-10 flex flex-col items-center justify-center">

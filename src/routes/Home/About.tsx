@@ -14,7 +14,7 @@ const AboutSection = () => {
 
             </div>
             <div>
-                <h2 className="md:text-[50px] mb-10 mt-15 text-black">More about Us</h2>
+                <h2 className="md:text-[50px] mb-10 mt-15 text-[#184E35]">More about Us</h2>
                 <p className="text-lg w-120 mb-10 text-[#384B38]">The Unsolicited Chosen is a Nairobi-based faith-inspired community initiative focused on environmental restoration, waste management, and public education. 
                     We believe that a clean environment is everyone’s right and everyone’s responsibility.
                 </p>

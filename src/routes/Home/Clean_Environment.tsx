@@ -20,7 +20,7 @@ const items = [
 const CleanEnvironment = () => {
     return (
         <div className="px-20 py-30 bg-[#F5FAF6] ">
-            <h2 className="text-[50px] text-center pb-25 text-black">Why clean environment matters</h2>
+            <h2 className="text-[50px] text-center pb-25 text-[#184E35]">Why clean environment matters</h2>
             <div className="flex flex-col lg:flex-row gap-50 justify-center">
                 
                 <div className="flex relative w-[400px] h-[500px]">
@@ -41,7 +41,7 @@ const CleanEnvironment = () => {
                         <div key = {index} className="flex gap-8">
                             <div className="w-0.5 h-20 bg-black"></div>
                             <div className="flex flex-col gap-2">
-                                <p className="text-2xl font-semibold  sub-sub-headings">{item.title}</p>
+                                <p className="text-2xl font-semibold  sub-sub-headings text-[#184E35]">{item.title}</p>
                                 <p className="text-lg w-97">{item.description}</p>
                             </div>
                             

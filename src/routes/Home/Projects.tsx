@@ -6,10 +6,10 @@ const Projects = () =>{
     return (
         <div className="px-20 py-30">
             <div className="flex justify-between pb-8 justify-items-stretch">
-                <h2 className="text-[50px] text-center text-black">Our Projects</h2>
+                <h2 className="text-[50px] text-center text-[#184E35]">Our Projects</h2>
                 <button className="btn-primary">Discover More →</button>
             </div>
-            <p className="italic font-bold pb-12">Transforming our communities, one action at a time.</p>
+            <p className="italic font-bold pb-12 text-[#184E35]">Transforming our communities, one action at a time.</p>
             <p className="text-lg w-120.5 pb-20">From cleaning up public spaces to teaching sustainable waste practices and planting trees, our programmes are practical, people-powered, and built to scale.</p>
             
             <div className="grid grid-cols-1 lg:grid-cols-2 auto-rows-min space-y-8">

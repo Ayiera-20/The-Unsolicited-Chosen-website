@@ -18,7 +18,7 @@ const WhyUnsolicited = () =>{
         <div className="relative h-screen w-full bg-cover bg-center bg-no-repeat bg-fixed text-white items-center text-center flex flex-col" 
         style={{backgroundImage: `url(${cleaningImage})`}}>
              <div className="absolute inset-0 bg-black/50"></div>
-             <h2 className="relative text-white lg:text-[50px] py-20">Why the Unsolicited Chosen</h2>
+             <h2 className="relative text-[#F5F1E3] lg:text-[50px] py-20">Why the Unsolicited Chosen</h2>
             <div className="relative z-10 grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 gap-12 space-y-10">
                 {items.map((item, index) => (
                         <div key={index} className=" text-center gap-4  backdrop-blur-lg p-6 flex flex-col justify-center rounded-b-lg">
