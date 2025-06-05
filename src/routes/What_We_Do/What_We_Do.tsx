@@ -3,9 +3,10 @@ import waste from "../../assets/images/volunteering-activism-eco-aware-african-g
 import partnership from "../../assets/images/pexels-shvetsa-5029853.jpg"
 import waste2 from "../../assets/images/freepik__the-style-is-candid-image-photography-with-natural__58390.jpeg"
 import NavBar from "../../components/navbar";
+import { Link } from 'react-router-dom';
 
 const items = [
-    {Image: waste, text:"Affordable Waste Solutions", link:"", readMore:"Lorem ipsum dolor sit amet, consectetur adipiscing elit"},
+    {Image: waste, text:"Affordable Waste Solutions", link:"/affordablewaste", readMore:"Lorem ipsum dolor sit amet, consectetur adipiscing elit"},
     {Image: waste2, text:"eco-friendly commerce", link:"", readMore:"Lorem ipsum dolor sit amet, consectetur adipiscing elit"},
     {Image:  waste, text:"Community Cleanups", link:"", readMore:"Lorem ipsum dolor sit amet, consectetur adipiscing elit"},
     {Image: waste2, text:"Community Education", link:"", readMore:"Lorem ipsum dolor sit amet, consectetur adipiscing elit"},
@@ -36,7 +37,7 @@ const WhatWeDo = () => {
                             <div className="bg-[#184E35] absolute inset-0 flex flex-col justify-center items-center opacity-0 group-hover:opacity-100 slide-up transition duration-300">
                                 <p className="relative text-[32px] font-medium pb-20 transition-transform duration-300 transform translate-y-4 group-hover:translate-y-0">{item.text}</p>
                                 <p className="pb-4 transition-transform duration-300 transform translate-y-4 group-hover:translate-y-0">{item.readMore}</p>
-                                <p className="text-lg font-semibold mb-4 hover:text-[#818F39] transition-transform duration-300 transform translate-y-4 group-hover:translate-y-0">Read more →</p>
+                                <Link to ={item.link} className="text-lg font-semibold mb-4 hover:text-[#818F39] transition-transform duration-300 transform translate-y-4 group-hover:translate-y-0">Read More  →</Link>
                             
                             </div>
 

@@ -2,8 +2,12 @@ import ReusableHeroSection from "../../../components/ReusableHeroSection";
 import volunteer from "../../../assets/images/collectingGarbage.jpg"
 import garbage from "../../../assets/images/2006.i602.009_volunteers_trash_out_flat.jpg"
 import Footer from "../../../components/footer";
+import { useEffect } from "react";
 
 const AffordableWaste = ()  => {
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
     return (
         <div>
             <ReusableHeroSection
