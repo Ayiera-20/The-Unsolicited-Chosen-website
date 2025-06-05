@@ -5,7 +5,7 @@ type ReusableHeroSectionProps = {
   heading: string;
   description: string;
   description2: string;
-  button: string;
+  button?: string;
   height?: string;
 };
 
@@ -28,10 +28,10 @@ const ReusableHeroSection = ({
             </div>
             
             <div className="items-center relative flex flex-col justify-center h-full text-white text-center">
-                <h1 className="md:text-[64px] pb-6">{heading}</h1>
-                <p className=" text-[32px]">{description}</p>
-                <p className=" text-[32px]">{description2}</p>
-                <button className="discover-button">{button}</button>
+                <h1 className="md:text-[64px] pb-6 text-[#F5F1E3]">{heading}</h1>
+                <p className=" text-xl">{description}</p>
+                <p className=" text-xl">{description2}</p>
+                {button && <button className="discover-button">{button}</button>}
             </div>
 
         </div>
