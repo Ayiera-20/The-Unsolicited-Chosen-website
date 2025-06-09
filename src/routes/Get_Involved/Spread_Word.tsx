@@ -4,10 +4,10 @@ import { SiTiktok } from 'react-icons/si';
 const SpreadWord = () =>{
     return (
         <div className="px-20 py-30 text-center flex flex-col justify-center items-center gap-12">
-            <h2 className="font-bold text-black text-[32px]">Be a voice for cleaner, fairer neighborhoods.</h2>
-            <p className='text-lg'>Share our mission online, at church, or in your circles.</p>
-            <p className='text-xl font-bold text-black'>One post can move a village. </p>
-            <p className='text-lg max-w-181.5'>Don't forget . donate today to support our mission and help bring this vision to life. Together, we can create lasting change.</p>
+            <h2 className="font-bold text-[#184E35] lg:text-[2rem] md:text-[1.75rem] text-2xl">Be a voice for cleaner, fairer neighborhoods.</h2>
+            <p className='lg:text-lg  md:text-base text-sm'>Share our mission online, at church, or in your circles.</p>
+            <p className='lg:text-xl md:text-[1.125rem] text-[1rem] font-bold '>One post can move a village. </p>
+            <p className='lg:text-lg  md:text-base text-sm max-w-181.5'>Don't forget . donate today to support our mission and help bring this vision to life. Together, we can create lasting change.</p>
             <button className="btn-primary">Donate Today</button>
             <div className="gap-4 flex flex-row relative py-6">
                                 {[FaFacebook, FaInstagram, FaTwitter, FaLinkedin, SiTiktok].map((Icon, index) => (

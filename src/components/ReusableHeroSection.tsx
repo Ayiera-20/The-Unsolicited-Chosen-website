@@ -28,9 +28,9 @@ const ReusableHeroSection = ({
             </div>
             
             <div className="items-center relative flex flex-col justify-center h-full text-white text-center">
-                <h1 className="md:text-[64px] pb-6 text-[#F5F1E3]">{heading}</h1>
-                <p className=" text-xl">{description}</p>
-                <p className=" text-xl">{description2}</p>
+                <h1 className="text-[2.5rem] md:text-[3.125rem] lg:text-[4rem] pb-6 text-[#F5F1E3]">{heading}</h1>
+                <p className=" lg:text-xl  md:text-lg text-[1rem]">{description}</p>
+                <p className=" lg:text-xl  md:text-lg text-[1rem]">{description2}</p>
                 {button && <button className="discover-button">{button}</button>}
             </div>
 

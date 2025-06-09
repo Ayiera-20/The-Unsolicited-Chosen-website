@@ -8,9 +8,9 @@ const items = [
 
 const DonatingCause = () =>{
     return(
-        <div className="bg-[#F5FAF6] px-20 py-30">
-            <h2 className="font-bold text-[32px] text-center pb-20">Why donating to our cause?</h2>
-            <div className=" grid grid-cols-1 md:grid-cols-2 gap-y-20 items-center justify-center px-20">
+        <div className="bg-[#F5FAF6] md:px-20 px-10 py-30">
+            <h2 className="lg:text-[3.125rem] md:text-[2.5rem] text-[2rem] text-center pb-20 text-[#184E35]">Why donating to our cause?</h2>
+            <div className=" grid grid-cols-1 md:grid-cols-2 gap-y-20 items-center justify-center lg:px-20 gap-8">
                 {items.map((item, index) =>(
                     <div key={index} className="bg-white rounded-2xl flex gap-3 shadow-md py-8 max-w-md">
                         <div className="px-4">
@@ -18,8 +18,8 @@ const DonatingCause = () =>{
                         </div>
                         
                         <div>
-                            <p className="font-bold lg:text-xl pb-4">{item.title}</p>
-                            <p className="max-w-79 text-[16px]">{item.description}</p>
+                            <p className="font-bold lg:text-xl md:text-[1.125rem] text-[1rem] pb-4">{item.title}</p>
+                            <p className="max-w-79 lg:text-lg  md:text-base text-sm">{item.description}</p>
 
                         </div>
                         

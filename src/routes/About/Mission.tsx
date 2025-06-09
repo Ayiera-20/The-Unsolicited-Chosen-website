@@ -51,8 +51,8 @@ const Mission = () => {
             </div>
             
             <div className="mt-20 ml-3.5">
-                <h2 className="font-bold lg:text-2xl mb-8 text-[#184E35]">{slides[selectedIndex].heading}</h2>
-                <div className="lg:text-lg font-medium max-w-142">
+                <h2 className="lg:text-[3.125rem] md:text-[2.5rem] text-[2rem] lg:text-2xl mb-8 text-[#184E35]">{slides[selectedIndex].heading}</h2>
+                <div className="lg:text-lg  md:text-base text-sm font-medium max-w-142">
                     {slides[selectedIndex].text}
                 </div>
             </div>
