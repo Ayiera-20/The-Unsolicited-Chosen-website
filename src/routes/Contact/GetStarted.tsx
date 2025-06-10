@@ -4,8 +4,8 @@ import sgoals from "../../assets/images/sustainable-development-goals-still-life
 
 const GetStarted = ()  => {
     return(
-        <div className="flex flex-col md:flex-row justify-center items-center px-20 py-30 gap-15 text-bold">
-            <img className='w-120 h-auto' src={sgoals} alt="" />
+        <div className="flex flex-col md:flex-row justify-center items-center px-20 lg:py-30 py-15 gap-15 text-bold">
+            <img className='lg:w-120 md:w-80 h-auto' src={sgoals} alt="" />
            <div>
             <h2 className="lg:text-[2.5rem] text-[2rem] pb-6 text-bold">Let’s get started</h2>
             <p className="lg:text-lg  md:text-base text-sm max-w-120 pb-6">Ready to take the next step? Whether you’re looking to collaborate, learn more, or begin your journey with us, fill out the form down below and let’s connect.</p>
