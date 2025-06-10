@@ -10,12 +10,12 @@ const items = [
 
 const WaysInvolved = () => {
     return (
-        <div className="bg-[#F5FAF6] px-20 py-30 flex flex-col items-center justify-center">
-            <h2 className="lg:text-[3.125rem] md:text-[2.5rem] text-[2rem] pb-40 text-[#184E35]">Ways to get involved</h2>
-            <div className="grid grid-cols-1 lg:grid-cols-4 md:grid-cols-2 gap-20">
+        <div className="bg-[#F5FAF6] md:px-20 lg:py-30 md:py-20 px-10 py-15 flex flex-col items-center justify-center">
+            <h2 className="lg:text-[3.125rem] md:text-[2.5rem] text-[2rem] lg:pb-40 md:pb-20 pb-10 text-[#184E35] text-center">Ways to get involved</h2>
+            <div className="grid grid-cols-1 lg:grid-cols-4 md:grid-cols-2 md:gap-20 gap-12">
                 {items.map((items, index) => (
-                    <div key={index} className="space-y-8">
-                        <img className="w-50 h-66.5" src={items.image} alt="" />
+                    <div key={index} className="md:space-y-8 space-y-4">
+                        <img className="md:w-50 md:h-66.5" src={items.image} alt="" />
                         <h3 className="max-w-58 font-bold lg:text-xl md:text[1.125rem] text-[1rem]">{items.heading}</h3>
                         <p className="max-w-55 lg:text-lg  md:text-base text-sm">{items.Description}</p>
                         <a className="font-semibold text-[1rem] hover:text-[#A3B18A] text-[#818F39]" href={items.link}>{items.linkText}</a>
