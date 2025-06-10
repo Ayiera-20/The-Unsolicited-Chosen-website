@@ -8,7 +8,7 @@ const payments =[
 ]
 const DonationOptions = () => {
     return(
-        <div className="px-20 py-30">
+        <div className="md:px-20 md:py-30 py-15 px-10">
             <h2 className="lg:text-[3.125rem] md:text-[2.5rem] text-[2rem] mb-20 text-center text-[#184E35]">Your donation options</h2>
             <div className="grid gird-col md:grid-cols-2 lg:grid-cols-4 gap-10">
                 {payments.map((payment, index) => (
