@@ -19,30 +19,30 @@ const items = [
 
 const CleanEnvironment = () => {
     return (
-        <div className="px-20 py-30 bg-[#F5FAF6] ">
-            <h2 className="lg:text-[3.125rem] md:text-[2.5rem] text-[2rem] text-center pb-25 text-[#184E35]">Why clean environment matters</h2>
-            <div className="flex flex-col lg:flex-row gap-50 justify-center">
+        <div className="md:px-20  md:py-30 py-15 bg-[#F5FAF6] ">
+            <h2 className="lg:text-[3.125rem] md:text-[2.5rem] text-[2rem] text-center md:pb-25 text-[#184E35]">Why clean environment matters</h2>
+            <div className="flex flex-col lg:flex-row lg:gap-50 md:gap-30 justify-center items-center lg:items-start">
                 
-                <div className="flex relative w-[400px] h-[500px]">
-                <div className="absolute bg-white w-113 h-182  bg-cover bg-center bg-no-repeat"
+                <div className="flex relative w-[400px] h-[500px] items-center md:items-start justify-center md:justify-items-start">
+                <div className="absolute bg-white lg:w-113 lg:h-182 md:w-100 md:h-100 w-80 h-80  bg-cover bg-center bg-no-repeat"
                         style={{backgroundImage: `url(${vegetation})`}}>
                     </div>
-                    <div className=" top-90 -left-40 bg-white  w-67 h-79   bg-cover bg-center bg-no-repeat  absolute"
+                    <div className="md:top-70 lg:top-90 top-80 md:-left-40 left-4 bg-white  w-25 h-25 md:w-70 md:h-70  bg-cover bg-center bg-no-repeat  absolute"
                         style={{backgroundImage: `url(${children})`}}>
                     </div>
                     
-                    <div className=" bottom-50 -right-40 bg-white w-58 h-58  bg-cover bg-center bg-no-repeat absolute"
+                    <div className=" bottom-80 md:-right-40 right-2 bg-white md:w-58 md:h-58 w-20 h-20 bg-cover bg-center bg-no-repeat absolute"
                         style={{backgroundImage: `url(${garbageCollection})`}}>
                     </div>
                 </div>
                 <div className="space-y-10">
                     {items.map((item, index) =>(
                         
-                        <div key = {index} className="flex gap-8">
+                        <div key = {index} className="flex gap-8 px-10 md:px-0">
                             <div className="w-0.5 h-20 bg-black"></div>
                             <div className="flex flex-col gap-2">
                                 <p className="lg:text-2xl text-base md:text-lg font-semibold  sub-sub-headings text-[#184E35]">{item.title}</p>
-                                <p className="lg:text-lg  md:text-base text-sm w-97">{item.description}</p>
+                                <p className="lg:text-lg  md:text-base text-sm md:w-97 w-auto">{item.description}</p>
                             </div>
                             
                            

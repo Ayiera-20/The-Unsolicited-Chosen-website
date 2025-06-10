@@ -35,8 +35,8 @@
     font-family: "Poppins", sans-serif;
     font-weight: 500px;
   }
-  
 
+  
   .btn-primary {
     background-color: #818F39;
     color: white;
@@ -48,6 +48,21 @@
   .btn-primary:hover{
     background-color: #184E35;
   }
+  /* Small screens (max-width: 640px) */
+@media (max-width: 640px) {
+  .btn-primary {
+    font-size: 1rem; /* ~16px */
+    padding: 0.75rem 1.5rem; /* smaller padding */
+  }
+}
+
+/* Medium screens (641px - 768px) */
+@media (min-width: 641px) and (max-width: 768px) {
+  .btn-primary {
+    font-size: 1.0625rem; /* ~17px */
+    padding: 0.875rem 1.75rem;
+  }
+}
 
   .sub-sub-headings{
     font-family: "Poppins", sans-serif;
@@ -59,11 +74,25 @@
 
   .discover-button {
   border: 2px solid #818F39;
-  padding: 0.5rem 3rem; /* py-4 = 1rem top/bottom, px-12 = 3rem left/right */
+  padding: 0.5rem 2rem; /* py-4 = 1rem top/bottom, px-12 = 3rem left/right */
   font-weight: bold;
   margin-top: 4rem; /* mt-16 = 4rem */
   backdrop-filter: blur(12px); /* Matches backdrop-blur-md */
   font-size: 1.5rem; /* md:text-2xl = 1.5rem (applied on medium screens) */
+}
+
+@media (min-width: 641px) {
+  .discover-button {
+    padding: 0.5rem 2.5rem; /* medium screens: more side padding */
+    font-size: 1.25rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .discover-button {
+    padding: 0.75rem 3rem; /* large screens: extra padding for better spacing */
+    font-size: 1.5rem;
+  }
 }
 
  .discover-button:hover {
