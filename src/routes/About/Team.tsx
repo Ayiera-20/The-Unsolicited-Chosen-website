@@ -43,12 +43,19 @@ const teamMembers = [
         instagram: "https://instagram.com",
         linkedin: "https://linkedin.com"
     } },
+    {image:profile, role: "Soaftware Developer||Graphic Designer", name: "Jeoffrey", 
+        description: "Team volunteering not only allows for greater impact but also fosters camaraderie and teamwork among participants.",
+        socialLinks:{
+        twitter: "https://twitter.com",
+        instagram: "https://instagram.com",
+        linkedin: "https://linkedin.com"
+    } },
     
 ]
 const Team = () => {
     return(
-        <div className="px-20 py-30 flex flex-col items-center justify-center">
-            <h2 className="lg:text-[3.125rem] md:text-[2.5rem] text-[2rem] mb-20 text-[#184E35]">Meet Our Team</h2>
+        <div className="px-20 md:py-30 py-15 flex flex-col items-center justify-center">
+            <h2 className="lg:text-[3.125rem] md:text-[2.5rem] text-[2rem] md:mb-20 mb-12 text-[#184E35] text-center">Meet Our Team</h2>
             <div>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-15">
                     {teamMembers.map((member, index) => (
@@ -57,7 +64,7 @@ const Team = () => {
                             <div className="space-y-4">
                                 <h3 className="text-[#A3B18A] lg:text-lg  md:text-base text-sm ">{member.role}</h3>
                                 <p className="lg:text-2xl md:text-xl text-lg">{member.name}</p>
-                                <div className="w-96 h-[1px] bg-[#AFDFAA]"></div>
+                                <div className="md:w-96 h-[1px] bg-[#AFDFAA]"></div>
                                 <p className="lg:text-lg  md:text-base text-sm ">{member.description}</p>
                                 <div className="flex  gap-4 mt-8">
                                     {member.socialLinks.twitter && (

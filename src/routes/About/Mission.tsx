@@ -27,9 +27,9 @@ const slides  = [
 const Mission = () => {
     const [selectedIndex, setSelectedIndex] = useState(0)
     return (
-        <div className="h-screen w-full px-20 py-30 flex flex-col lg:flex-row gap-8">
+        <div className="w-full md:px-20 px-10 md:py-30 py-15 flex flex-col lg:flex-row">
             <div>
-                <div className="flex gap-4 flex-wrap">
+                <div className="grid gap-4 grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
                 {slides.map((slide, index) => {
                     const isActive = selectedIndex === index;
                     const color = buttonColors[index];
@@ -38,7 +38,7 @@ const Mission = () => {
                     <button
                         key={index}
                         onClick={() => setSelectedIndex(index)}
-                        className={`font-bold lg:text-[18px] py-2 px-4 rounded-full border-2 transition-all duration-300
+                        className={`font-bold lg:text-lg  md:text-base text-sm py-2 md:px-4 px-2 rounded-full border-2 transition-all duration-300
                         ${isActive 
                             ? `${color.bg} ${color.text} ${color.border}`
                             : `bg-transparent text-black ${color.border} hover:${color.bg} hover:${color.text}`
@@ -50,7 +50,7 @@ const Mission = () => {
                 })}
             </div>
             
-            <div className="mt-20 ml-3.5">
+            <div className="md:mt-20 mt-10 ml-3.5">
                 <h2 className="lg:text-[3.125rem] md:text-[2.5rem] text-[2rem] lg:text-2xl mb-8 text-[#184E35]">{slides[selectedIndex].heading}</h2>
                 <div className="lg:text-lg  md:text-base text-sm font-medium max-w-142">
                     {slides[selectedIndex].text}
@@ -59,7 +59,7 @@ const Mission = () => {
                 
             </div>
             
-            <img className="max-w-2xl h-150 pt-20" src={clean} alt="" />
+            <img className="max-w-2xl md:h-150 h-auto md:pt-20 pt-10" src={clean} alt="" />
         </div>
     )
 }
