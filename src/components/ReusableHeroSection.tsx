@@ -18,7 +18,7 @@ const ReusableHeroSection = ({
   height = 'h-screen',
 }: ReusableHeroSectionProps) => {
   return (
-    <div className={`relative lg:${height} md:h-[50vh] h-[64vh]  w-full bg-cover bg-center bg-no-repeat`}
+    <div className={`relative lg:${height} md:h-[80vh] h-[64vh]  w-full bg-cover bg-center bg-no-repeat`}
         style={{backgroundImage: `url(${backgroundImage})`}}
         >
             <div className="absolute inset-0 bg-black/50"></div>
