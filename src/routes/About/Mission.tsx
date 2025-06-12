@@ -29,7 +29,7 @@ const Mission = () => {
     return (
         <div className="w-full md:px-20 px-10 md:py-30 py-15 flex flex-col lg:flex-row">
             <div>
-                <div className="grid gap-4 grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+                <div className="grid gap-4 grid-cols-2 md:grid-cols-3 lg:grid-cols-4 ">
                 {slides.map((slide, index) => {
                     const isActive = selectedIndex === index;
                     const color = buttonColors[index];

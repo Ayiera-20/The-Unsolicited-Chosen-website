@@ -59,13 +59,13 @@ const Team = () => {
             <div>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-15">
                     {teamMembers.map((member, index) => (
-                        <div key={index} className="flex flex-col md:flex-row gap-6">
+                        <div key={index} className="flex flex-col lg:flex-row gap-6">
                             <img className="w-45 h-auto" src ={member.image} alt={member.name} />
                             <div className="space-y-4">
                                 <h3 className="text-[#A3B18A] lg:text-lg  md:text-base text-sm ">{member.role}</h3>
                                 <p className="lg:text-2xl md:text-xl text-lg">{member.name}</p>
-                                <div className="md:w-96 h-[1px] bg-[#AFDFAA]"></div>
-                                <p className="lg:text-lg  md:text-base text-sm ">{member.description}</p>
+                                <div className="lg:w-96 h-[1px] bg-[#AFDFAA]"></div>
+                                <p className="lg:text-lg  md:text-base text-sm">{member.description}</p>
                                 <div className="flex  gap-4 mt-8">
                                     {member.socialLinks.twitter && (
                                         <a

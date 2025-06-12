@@ -14,8 +14,8 @@ const GetStarted = ()  => {
             <p className='lg:text-[1rem] md:text-sm text-xs'>Phone</p>
             <p className='pb-6 lg:text-lg  md:text-base text-sm'>+254 757 802 807</p>
             <p className='lg:text-[1rem] md:text-sm text-xs'>Email</p>
-            <p className='lg:text-lg  md:text-base text-sm'>theunsolocitedchosen@gmail.com</p>
-            <p className='lg:text-lg  md:text-base text-sm pb-6'>theunsolocitedchosen@outlook.com</p>
+            <p className='lg:text-lg  md:text-base text-sm'>theunsolicitedchosen@gmail.com</p>
+            <p className='lg:text-lg  md:text-base text-sm pb-6'>theunsolicitedchosen@outlook.com</p>
             <div className="gap-4 flex flex-row relative py-6">
                                             {[FaFacebook, FaInstagram, FaTwitter, FaLinkedin, SiTiktok].map((Icon, index) => (
                                                 <a
@@ -23,7 +23,7 @@ const GetStarted = ()  => {
                                                 href="#"
                                                 target="_blank"
                                                 rel="noopener noreferrer"
-                                                className="bg-white text-green-900  p-3 shadow-md hover:bg-green-100 transition duration-300"
+                                                className="bg-white text-green-900  p-3 shadow-md hover:bg-[#A3B18A] transition duration-300"
                                                 >
                                                 <Icon className="text-xl" />
                                                 </a>
