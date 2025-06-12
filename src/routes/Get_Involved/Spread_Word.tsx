@@ -1,5 +1,6 @@
 import { FaFacebook, FaInstagram, FaTwitter, FaLinkedin } from 'react-icons/fa';
 import { SiTiktok } from 'react-icons/si';
+import { Link } from 'react-router-dom'
 
 const SpreadWord = () =>{
     return (
@@ -8,7 +9,9 @@ const SpreadWord = () =>{
             <p className='lg:text-lg  md:text-base text-sm'>Share our mission online, at church, or in your circles.</p>
             <p className='lg:text-xl md:text-[1.125rem] text-[1rem] font-bold '>One post can move a village. </p>
             <p className='lg:text-lg  md:text-base text-sm max-w-181.5'>Don't forget . donate today to support our mission and help bring this vision to life. Together, we can create lasting change.</p>
-            <button className="btn-primary">Donate Today</button>
+            <Link to ="/donate">
+            <button className="btn-primary ">Donate Today</button>
+            </Link>
             <div className="gap-4 flex flex-row relative py-6">
                                 {[FaFacebook, FaInstagram, FaTwitter, FaLinkedin, SiTiktok].map((Icon, index) => (
                                     <a

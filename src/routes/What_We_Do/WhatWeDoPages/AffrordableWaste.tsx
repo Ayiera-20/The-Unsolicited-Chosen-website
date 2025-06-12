@@ -26,7 +26,7 @@ const AffordableWaste = ()  => {
                     <p className="lg:text-lg  md:text-base text-sm">Our approach includes deploying Micro-Collection Teams to pick up waste at designated times and locations.</p>
                     <p className="lg:text-lg  md:text-base text-sm"> We also install labeled bins (organic, recyclable, and others) to promote better waste management at the household level.</p>
                 </div>
-                {/* <img className="w-125 h-136 bg-cover bg-center" src={garbage} alt="" /> */}
+
                 <div className="w-125 lg:h-136 h-80 bg-cover bg-center bg-no-repeat"
                 style={{backgroundImage: `url(${garbage})`}}
                 >

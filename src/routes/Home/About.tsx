@@ -1,5 +1,6 @@
 import garbageCollection from "../../assets/images/collectingGarbage.jpg"
 import savePlanet from "../../assets/images/savePlanet.jpg"
+import { Link } from "react-router-dom";
 
 const AboutSection = () => {
 
@@ -18,7 +19,10 @@ const AboutSection = () => {
                 <p className="lg:text-lg  md:text-base text-sm md:w-100 lg:w-100 w-auto mb-10 text-[#384B38]">The Unsolicited Chosen is a Nairobi-based faith-inspired community initiative focused on environmental restoration, waste management, and public education. 
                     We believe that a clean environment is everyone’s right and everyone’s responsibility.
                 </p>
+                <Link to="/about">
                 <button className="btn-primary">Learn More</button>
+                </Link>
+                
             </div>
 
         </div>

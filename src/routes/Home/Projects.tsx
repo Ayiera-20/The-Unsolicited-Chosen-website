@@ -1,6 +1,8 @@
 import veg from "../../assets/images/hero.jpg"
 import children from "../../assets/images/children.jpg"
 import recyc from "../../assets/images/Intro-background.jpg"
+import { Link } from "react-router-dom";
+
 
 const Projects = () =>{
     return (
@@ -12,7 +14,7 @@ const Projects = () =>{
             <p className="italic font-bold pb-12 text-[#184E35] lg:text-lg  md:text-base text-sm md:text-left text-center">Transforming our communities, one action at a time.</p>
             <p className="lg:text-lg  md:text-base text-sm md:w-120.5 w-auto pb-20 text-center md:text-left">From cleaning up public spaces to teaching sustainable waste practices and planting trees, our programmes are practical, people-powered, and built to scale.</p>
             
-            <div className="grid grid-cols-1 lg:grid-cols-2 auto-rows-min space-y-8">
+            <div className="grid grid-cols-1 lg:grid-cols-2 auto-rows-min space-y-8 md:gap-4">
                 <div className="space-y-4 w-full h-auto">
                     <img className="w-116.5 md:h-74.5 h-auto rounded-xl" src={veg} alt="" />
                     <p className="lg:text-lg  md:text-base text-sm font-bold">Community Cleanups</p>
@@ -28,7 +30,10 @@ const Projects = () =>{
                 
                
             </div>
+            <Link to="/projects">
             <button className="btn-primary md:hidden max-w-50 mt-10">Discover More →</button>
+            </Link>
+            
         </div>
     )
 }

@@ -4,7 +4,7 @@ import educationIcon from "../../assets/images/education.svg"
 import treePlantingIcon from "../../assets/images/tree-planting-initiative.svg"
 import partnershipIcon from "../../assets/images/partnership.svg"
 import faithIcon from "../../assets/images/cross.svg"
-
+import { Link } from "react-router-dom";
 
 
 const items = [
@@ -14,7 +14,7 @@ const items = [
     {icon: treePlantingIcon, title:"Tree Planting", description:"Tree planting helps fight pollution and climate change. Our events engage communities to green Nairobi one seedling at a time."},
     {icon: partnershipIcon, title:"Strategic Partnerships", description: "Real change takes teamwork. We partner with governments, NGOs, and communities to share resources and grow our impact."},
     {icon: faithIcon, title:"Spreading faith and hope", description:"We uplift both spaces and spirits through gentle faith-based messages, wellness reflections, and moments of encouragement."},
-    {icon: cleanUpIcon, title: "Empowering through eco-friendly commerce", description: "Empowering through eco-friendly commerce" }
+    {icon: cleanUpIcon, title: "Eco-friendly commerce", description: "Empowering through eco-friendly commerce" }
     
 ]
 
@@ -26,7 +26,10 @@ const WhatWeDo = () => {
         <div className="lg:px-20 md:px-15  md:py-30 px-4 py-15">
             <div className="flex flex-col md:flex-row lg:gap-100 md:gap-40 gap-10 justify-end items-center md:pl-30 pb-18 ">
                 <h2 className="lg:text-[3.125rem] md:text-[2.5rem] text-[2rem] text-[#184E35]">What we do</h2>
+                <Link to="/whatwedo">
                 <button className="btn-primary">Our Services</button>
+                </Link>
+                
             </div>
             <div className=" grid lg:grid-cols-3 grid-cols-2  items-center md:gap-10 gap-6 justify-center  lg:items-stretch h-full md:px-0 px-2">
                 {items.map((item, index) => (
