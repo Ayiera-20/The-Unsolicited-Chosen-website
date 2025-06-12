@@ -43,14 +43,20 @@ const teamMembers = [
         instagram: "https://instagram.com",
         linkedin: "https://linkedin.com"
     } },
-    {image:profile, role: "Soaftware Developer||Graphic Designer", name: "Jeoffrey", 
+    {image:profile, role: "Software Developer || Graphic Designer", name: "Jeoffrey", 
         description: "Team volunteering not only allows for greater impact but also fosters camaraderie and teamwork among participants.",
         socialLinks:{
         twitter: "https://twitter.com",
         instagram: "https://instagram.com",
         linkedin: "https://linkedin.com"
     } },
-    
+    {image:profile, role: "Admin", name: "Nicole", 
+        description: "Team volunteering not only allows for greater impact but also fosters camaraderie and teamwork among participants.",
+        socialLinks:{
+        twitter: "https://twitter.com",
+        instagram: "https://instagram.com",
+        linkedin: "https://linkedin.com"
+    } },
 ]
 const Team = () => {
     return(
