@@ -19,9 +19,9 @@ const WhyUnsolicited = () =>{
         style={{backgroundImage: `url(${cleaningImage})`}}>
              <div className="absolute inset-0 bg-black/50"></div>
              <h2 className="relative text-[#F5F1E3] lg:text-[3.125rem] md:text-[2.5rem] text-[2rem] md:py-20 py-15">Why the Unsolicited Chosen</h2>
-            <div className="relative z-10 grid grid-cols-2 lg:grid-cols-3 md:grid-cols-2 md:gap-12 md:mx-0 gap-6 mx-4 lg:pb-0 pb-15">
+            <div className="relative z-10 grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 md:gap-12 md:mx-0 gap-6 mx-4 lg:pb-0 pb-15">
                 {items.map((item, index) => (
-                        <div key={index} className=" text-center md:gap-4 gap-2  backdrop-blur-lg md:p-6 p-2 flex flex-col justify-center rounded-b-lg">
+                        <div key={index} className=" text-center md:gap-4 gap-2  backdrop-blur-lg md:p-6 p-4 flex flex-col justify-center rounded-b-lg">
                              <div className="flex justify-center items-center md:mb-3 text-3xl text-white">
                                 {item.icon}
                             </div>
