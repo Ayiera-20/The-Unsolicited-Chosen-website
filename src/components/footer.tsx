@@ -61,7 +61,7 @@ const Footer = () =>{
                 </div>
                 <div className='w-full md:w-1/3 lg:w-full flex flex-col  gap-4 lg:text-lg md:text-base text-sm font-semibold'>
                     <p className='sub-sub-headings sub-sub-headings lg:text-xl md:text-lg text-[1rem]'>Information</p>
-                    <a href="">+254 757 807</a>
+                    <a href="">+254 757 802 807</a>
                     <a href="">theunsolicitedchosen@gmail.com</a>
                     <a href="">theunsolicitedchosen@outlook.com</a>
                     <Link to ="/contact">
