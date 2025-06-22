@@ -2,6 +2,7 @@ import { FaFacebook, FaInstagram, FaTwitter, FaLinkedin } from 'react-icons/fa';
 import { SiTiktok } from 'react-icons/si';
 import bgImage from "../assets/images/nature.jpg"
 import { Link } from 'react-router-dom';
+import logo from '../assets/images/Unsolo2b (1).jpg'
 
 
 const Footer = () =>{
@@ -11,7 +12,7 @@ const Footer = () =>{
             <div className="absolute inset-0 bg-[#184E35]/90"></div>
             <div className='relative z-10 flex flex-wrap lg:flex-nowrap gap-y-8'>
                 <div className='flex flex-col w-full lg:text-lg md:text-base text-sm items-center text-center lg:text-left justify-center lg:justify-items-start lg:items-start'>
-                    <img className='h-30 w-30 mb-4 ' src="" alt="" />
+                    <img className='h-30 w-30 mb-4 object-cover object-center' src={logo} alt="" />
                     <p>The Unsolicited Chosen</p>
                     <p>Nairobi, Kenya</p>
                     <div className=' flex flex-col'>

@@ -35,6 +35,11 @@
     font-family: "Poppins", sans-serif;
     font-weight: 500px;
   }
+  logo-text{
+    font-family: "Montserrat", sans-serif;
+    color: #F5F1E3;
+
+  }
 
   
   .btn-primary {
