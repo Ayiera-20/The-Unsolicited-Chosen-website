@@ -3,6 +3,7 @@ import volunteer from "../../../assets/images/collectingGarbage.jpg"
 import garbage from "../../../assets/images/2006.i602.009_volunteers_trash_out_flat.jpg"
 import Footer from "../../../components/footer";
 import { useEffect } from "react";
+import { Link } from "react-router-dom";
 
 const AffordableWaste = ()  => {
     useEffect(() => {
@@ -42,7 +43,16 @@ const AffordableWaste = ()  => {
                     <img className="lg:w-161 lg:h-85 md:w-80 w-50 h-auto" src={garbage} alt="" />
                     <img className="lg:w-116 lg:h-86 md:w-60 w-50 h-auto" src={garbage} alt="" />
                 </div>
+
+                <Link to ="/whatwedo">
+                <button className="md:py-4 md:px-8 py-2 px-4 mt-20 rounded-full bg-[#818F39]
+              lg:text-lg md:text-base text-sm text-white shadow-2xl border-transparent
+               hover:bg-[#184E35] font-bold" >View more programs</button>
+                </Link>
             </div>
+
+            
+            
             <Footer />
 
             
