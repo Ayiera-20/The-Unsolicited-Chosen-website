@@ -4,6 +4,7 @@ import {
   FaInstagram,
 } from "react-icons/fa";
 import profile from "../../assets/images/woman-floral-shirt-smiling.jpg"
+import AnimatedText from "../../components/AnimatedText";
 
 
 const teamMembers = [
@@ -61,10 +62,11 @@ const teamMembers = [
 const Team = () => {
     return(
         <div className="px-20 md:py-30 py-15 flex flex-col items-center justify-center">
-            <h2 className="lg:text-[3.125rem] md:text-[2.5rem] text-[2rem] md:mb-20 mb-12 text-[#184E35] text-center">Meet Our Team</h2>
+            <h2 className="lg:text-[3.125rem] md:text-[2.5rem] text-[2rem] md:mb-20 mb-12 text-[#184E35] text-center slide">Meet Our Team</h2>
             <div>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-15">
                     {teamMembers.map((member, index) => (
+                        <AnimatedText>
                         <div key={index} className="flex flex-col lg:flex-row gap-6">
                             <img className="w-45 h-auto" src ={member.image} alt={member.name} />
                             <div className="space-y-4">
@@ -109,6 +111,7 @@ const Team = () => {
                             </div>
                             
                         </div>
+                        </AnimatedText>
                         
 
                     ))}

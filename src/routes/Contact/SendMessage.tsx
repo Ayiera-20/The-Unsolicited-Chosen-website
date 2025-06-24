@@ -1,8 +1,11 @@
 import green from "../../assets/images/beautiful-japanese-forest-landscape.jpg"
+import AnimatedText from "../../components/AnimatedText";
 const SendMessage = () => {
     return(
         <div className="bg-[#F5FAF6] md:py-20 py-10">
+            <AnimatedText>
             <h2 className=" md:text-[2rem] lg:text-[2.5rem] text-2xl pb-30 text-center text-[#184E35]">Send Your Message</h2>
+            </AnimatedText>
             <div className="relative w-full h-[60vh] flex md:items-end  items-center justify-center bg-fixed bg-cover bg-center bg-no-repeat" style={{ backgroundImage: `url(${green})`}}>
               
                     <form action="" className="flex flex-col gap-10 md:w-150 lg:w-200 bg-[#184E35] px-10 py-10 lg:mb-20 md:mb-70 mb-45 lg:text-lg  md:text-base text-sm">

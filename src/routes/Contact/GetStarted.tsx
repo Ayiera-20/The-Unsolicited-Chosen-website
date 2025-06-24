@@ -1,13 +1,15 @@
 import { FaFacebook, FaInstagram, FaTwitter, FaLinkedin } from 'react-icons/fa';
 import { SiTiktok } from 'react-icons/si';
 import sgoals from "../../assets/images/sustainable-development-goals-still-life copy.jpg"
+import AnimatedText from '../../components/AnimatedText';
 
 const GetStarted = ()  => {
     return(
         <div className="flex flex-col md:flex-row justify-center items-center px-20 lg:py-30 py-15 gap-15 text-bold">
             <img className='lg:w-120 md:w-80 h-auto' src={sgoals} alt="" />
            <div>
-            <h2 className="lg:text-[2.5rem] text-[2rem] pb-6 text-bold text-[#184E35]">Let’s get started</h2>
+            <h2 className="lg:text-[2.5rem] text-[2rem] pb-6 text-bold text-[#184E35] slide">Let’s get started</h2>
+            <AnimatedText>
             <p className="lg:text-lg  md:text-base text-sm max-w-120 pb-6">Ready to take the next step? Whether you’re looking to collaborate, learn more, or begin your journey with us, fill out the form down below and let’s connect.</p>
             <p className='lg:text-[1rem] md:text-sm text-xs text-[#82A718]'>Address</p>
             <p className='pb-6 lg:text-lg  md:text-base text-sm'>Nairobi, Kenya</p>
@@ -16,6 +18,7 @@ const GetStarted = ()  => {
             <p className='lg:text-[1rem] md:text-sm text-xs text-[#82A718]'>Email</p>
             <p className='lg:text-lg  md:text-base text-sm'>theunsolicitedchosen@gmail.com</p>
             <p className='lg:text-lg  md:text-base text-sm pb-6'>theunsolicitedchosen@outlook.com</p>
+            </AnimatedText>
             <div className="gap-4 flex flex-row relative py-6">
                                             {[FaFacebook, FaInstagram, FaTwitter, FaLinkedin, SiTiktok].map((Icon, index) => (
                                                 <a

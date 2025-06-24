@@ -20,7 +20,7 @@ const items = [
 const CleanEnvironment = () => {
     return (
         <div className="md:px-20  md:py-30 py-15 bg-[#F5FAF6] ">
-            <h2 className="lg:text-[3.125rem] md:text-[2.5rem] text-[2rem] text-center md:pb-25 text-[#184E35]">Why clean environment matters</h2>
+            <h2 className="lg:text-[3.125rem] md:text-[2.5rem] text-[2rem] text-center md:pb-25 text-[#184E35] slide">Why clean environment matters</h2>
             <div className="flex flex-col lg:flex-row lg:gap-50 md:gap-30 justify-center items-center lg:items-start">
                 
                 <div className="flex relative w-[400px] h-[500px] items-center md:items-start justify-center md:justify-items-start">

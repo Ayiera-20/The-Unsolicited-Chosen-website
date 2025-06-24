@@ -1,14 +1,17 @@
 import { FaFacebook, FaInstagram, FaTwitter, FaLinkedin } from 'react-icons/fa';
 import { SiTiktok } from 'react-icons/si';
 import { Link } from 'react-router-dom'
+import AnimatedText from '../../components/AnimatedText';
 
 const SpreadWord = () =>{
     return (
         <div className="md:px-20 px-10 md:py-30 py-15 text-center flex flex-col justify-center items-center md:gap-12 gap-8">
-            <h2 className="font-bold text-[#184E35] lg:text-[2rem] md:text-[1.75rem] text-2xl">Be a voice for cleaner, fairer neighborhoods.</h2>
+            <h2 className="font-bold text-[#184E35] lg:text-[2rem] md:text-[1.75rem] text-2xl slide">Be a voice for cleaner, fairer neighborhoods.</h2>
+            <AnimatedText>
             <p className='lg:text-lg  md:text-base text-sm'>Share our mission online, at church, or in your circles.</p>
             <p className='lg:text-xl md:text-[1.125rem] text-[1rem] font-bold '>One post can move a village. </p>
             <p className='lg:text-lg  md:text-base text-sm max-w-181.5'>Don't forget . donate today to support our mission and help bring this vision to life. Together, we can create lasting change.</p>
+            </AnimatedText>
             <Link to ="/donate">
             <button className="btn-primary ">Donate Today</button>
             </Link>

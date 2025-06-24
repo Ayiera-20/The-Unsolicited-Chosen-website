@@ -1,5 +1,6 @@
 import { useState } from "react";
 import clean from "../../assets/images/Happy volunteers cleaning city park from garbage.jpg"
+import AnimatedText from "../../components/AnimatedText";
 const buttonColors = [
   { bg: "bg-[#184E35]", text: "text-white", border: "border-[#184E35]" }, // Who we are
   { bg: "bg-[#A3B18A]", text: "text-black", border: "border-[#A3B18A]" }, // Mission
@@ -51,10 +52,15 @@ const Mission = () => {
             </div>
             
             <div className="md:mt-20 mt-10 ml-3.5">
-                <h2 className="lg:text-[3.125rem] md:text-[2.5rem] text-[2rem] lg:text-2xl mb-8 text-[#184E35]">{slides[selectedIndex].heading}</h2>
-                <div className="lg:text-lg  md:text-base text-sm font-medium max-w-142">
+                <AnimatedText>
+                    <h2 className="lg:text-[3.125rem] md:text-[2.5rem] text-[2rem] lg:text-2xl mb-8 text-[#184E35]">{slides[selectedIndex].heading}</h2>
+                </AnimatedText>
+                <AnimatedText>
+                    <div className="lg:text-lg  md:text-base text-sm font-medium max-w-142">
                     {slides[selectedIndex].text}
                 </div>
+                </AnimatedText>
+                
             </div>
                 
             </div>

@@ -5,6 +5,7 @@ import treePlantingIcon from "../../assets/images/tree-planting-initiative.svg"
 import partnershipIcon from "../../assets/images/partnership.svg"
 import faithIcon from "../../assets/images/cross.svg"
 import { Link } from "react-router-dom";
+import AnimatedText from "../../components/AnimatedText"
 
 
 const items = [
@@ -25,19 +26,21 @@ const WhatWeDo = () => {
     return (
         <div className="lg:px-20 md:px-15  md:py-30 px-4 py-15">
             <div className="flex flex-col md:flex-row lg:gap-100 md:gap-40 gap-10 justify-end items-center md:pl-30 pb-18 ">
-                <h2 className="lg:text-[3.125rem] md:text-[2.5rem] text-[2rem] text-[#184E35]">What we do</h2>
+                <h2 className="lg:text-[3.125rem] md:text-[2.5rem] text-[2rem] text-[#184E35] slide">What we do</h2>
                 <Link to="/whatwedo">
                 <button className="btn-primary">Our Services</button>
                 </Link>
-                
             </div>
             <div className=" grid lg:grid-cols-3 grid-cols-2  items-center md:gap-10 gap-6 justify-center  lg:items-stretch h-full md:px-0 px-2">
                 {items.map((item, index) => (
                     <div key={index} className="flex flex-col justify-center items-center text-center md:gap-4 gap-2 h-full px-4 lg:py-8 pt-6 md:pb-2 shadow-xl border-1 border-gray-300 rounded-xl">
-                        <img className="w-6 h-6 lg:w-12 lg:h-12 t-10" src={item.icon} alt={item.title} />
-                        <p className="lg:text-lg  md:text-base text-sm font-bold sub-sub-headings text-[#184E35]">{item.title}</p>
-                        <p className="md:text-[1rem] text-sm w-71 hidden lg:block">{item.description}</p>
-                        <a className="lg:hidden md:text-base text-sm font-bold pb-10" href="">Read More</a>
+                        <AnimatedText className="flex flex-col justify-center items-center text-center md:gap-4 gap-2 h-full">
+                            <img className="w-6 h-6 lg:w-12 lg:h-12 mx-auto block mb-4" src={item.icon} alt={item.title} />
+                            <p className="lg:text-lg  md:text-base text-sm font-bold sub-sub-headings text-[#184E35]">{item.title}</p>
+                            <p className="md:text-[1rem] text-sm w-71 hidden lg:block">{item.description}</p>
+                            <a className="lg:hidden md:text-base text-sm font-bold pb-10" href="">Read More</a>
+                        </AnimatedText>
+                        
 
                     </div>
                 ))}
