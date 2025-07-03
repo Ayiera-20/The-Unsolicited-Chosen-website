@@ -39,6 +39,7 @@ const DrawerMenu = ({ className = "" }: DrawerMenu) => {
           </button>
         </div>
         <ul className="flex flex-col gap-2 mt-10 text-lg">
+<<<<<<< Updated upstream
           {["Home", "About", "What we do", "Projects", "Get invloved"].map(
             (item) => (
               <li
@@ -51,6 +52,24 @@ const DrawerMenu = ({ className = "" }: DrawerMenu) => {
               </li>
             )
           )}
+=======
+          {[
+            { name: "Home", path: "/" },
+            { name: "About", path: "/about" },
+            { name: "What we do", path: "/whatwedo" },
+            { name: "Projects", path: "/projects" },
+            { name: "Get involved", path: "/getinvolved" },
+          ].map((item) => (
+            <li
+              key={item.name}
+              className="block text-white p-2 hover:border-[#A3B18A] hover:bg-[#818F39] border border-transparent active:bg-[#A3B18] rounded-md transition-colors duration-150"
+            >
+              <Link to={item.path} onClick={handleClose}>
+                {item.name}
+              </Link>
+            </li>
+          ))}
+>>>>>>> Stashed changes
         </ul>
         <div className="flex flex-col gap-2 mt-10 text-lg">
           <p className="hover:bg-[#afdfaa] block p-2 rounded-md">Donate Now</p>

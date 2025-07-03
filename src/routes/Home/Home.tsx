@@ -3,7 +3,6 @@ import AboutSection from "./About";
 import CleanEnvironment from "./Clean_Environment";
 import GetInvolved from "./Get_Invloved";
 import HeroSection from "./Hero";
-import Projects from "./Projects";
 import WhatWeDo from "./What_we_do";
 import WhyUnsolicited from "./Why";
 
@@ -14,7 +13,6 @@ const Home = () => {
             <AboutSection />
             <WhatWeDo />
             <CleanEnvironment />
-            <Projects />
             <WhyUnsolicited />
             <GetInvolved />
             <Footer />

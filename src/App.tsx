@@ -1,12 +1,20 @@
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import './App.css'
-import Home from './routes/Home/Home'
-import About from './routes/About/About'
-import WhatWeDo from './routes/What_We_Do/What_We_Do'
+import Home from './routes/Home/Home';
+import About from './routes/About/About';
+import WhatWeDo from './routes/What_We_Do/What_We_Do';
+import Projects from './routes/Home/Projects';
 import GetInvolved from './routes/Get_Involved/Get_Involved'
+<<<<<<< Updated upstream
 import ContactUs from './routes/Contact/ContactUs'
 import Donate from './routes/Donate/Donate'
 import AffordableWaste from './routes/What_We_Do/WhatWeDoPages/AffrordableWaste'
+=======
+import ContactUs from './routes/Contact/ContactUs';
+import Donate from './routes/Donate/Donate';
+import AffordableWaste from './routes/What_We_Do/WhatWeDoPages/AffrordableWaste';
+import ScrollToTop from './components/scrollTop';
+>>>>>>> Stashed changes
 
 function App() {
 
@@ -17,6 +25,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="about" element={<About />} />
         <Route path="whatwedo" element={<WhatWeDo />} />
+        <Route path="projects" element={<Projects />} /> 
         <Route path="getinvolved" element={<GetInvolved />} />
         <Route path="Contact" element={<ContactUs />} />
         <Route path="donate" element={<Donate/>} />
