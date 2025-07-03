@@ -84,6 +84,8 @@
   margin-top: 2rem; /* mt-16 = 4rem */
   backdrop-filter: blur(12px); /* Matches backdrop-blur-md */
   font-size: 1rem; /* md:text-2xl = 1.5rem (applied on medium screens) */
+  transition: all 0.3s ease-in-out;
+  transition: transform 3s;
 }
 
 @media (min-width: 641px) {
@@ -100,11 +102,15 @@
     padding: 0.75rem 3rem; /* large screens: extra padding for better spacing */
     font-size: 1.5rem;
     margin-top: 4rem;
+   
   }
 }
 
  .discover-button:hover {
-  backdrop-filter: blur(94px);
+  backdrop-filter: blur(1000px);
+   transform: translateY(-4px);
+   box-shadow: 0 2px 4px #818F39;
+  
  }
 
 
@@ -120,9 +126,7 @@
   backdrop-filter: blur(20px);
 }
 
-.discover-button:hover span {
-  transform: translateX(-10px); /* Move text to the left */
-}
+
 
 .discover-button:hover::after {
   opacity: 1;
@@ -160,3 +164,28 @@
 
 
 
+.head-fade {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 1s ease-out 0.5s forwards;
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+
+@keyframes bgFade {
+  to {
+    opacity: 1;
+  }
+}
+
+.animate-bg-fade {
+  animation: bgFade 1.5s ease-in-out forwards;
+  animation-delay: 0.2s;
+}
