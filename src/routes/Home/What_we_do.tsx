@@ -28,7 +28,7 @@ const WhatWeDo = () => {
             <div className="flex flex-col md:flex-row lg:gap-100 md:gap-40 gap-10 justify-end items-center md:pl-30 pb-18 ">
                 <h2 className="lg:text-[3.125rem] md:text-[2.5rem] text-[2rem] text-[#184E35] slide">What we do</h2>
                 <Link to="/whatwedo">
-                <button className="btn-primary">Our Services</button>
+                <button className="btn-primary transition-transform duration-[1000ms] hover:scale-110">Our Services</button>
                 </Link>
             </div>
             <div className=" grid lg:grid-cols-3 grid-cols-2  items-center md:gap-10 gap-6 justify-center  lg:items-stretch h-full md:px-0 px-2">

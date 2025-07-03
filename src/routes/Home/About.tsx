@@ -24,7 +24,7 @@ const AboutSection = () => {
                 </AnimatedText>
 
                 <Link to="/about">
-                <button className="btn-primary">Learn More</button>
+                <button className="btn-primary transition-transform duration-[1000ms] hover:scale-110">Learn More</button>
                 </Link>
                 
             </div>

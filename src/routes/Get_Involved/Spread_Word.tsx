@@ -13,7 +13,7 @@ const SpreadWord = () =>{
             <p className='lg:text-lg  md:text-base text-sm max-w-181.5'>Don't forget . donate today to support our mission and help bring this vision to life. Together, we can create lasting change.</p>
             </AnimatedText>
             <Link to ="/donate">
-            <button className="btn-primary ">Donate Today</button>
+            <button className="btn-primary transition-transform duration-[1000ms] hover:scale-110">Donate Today</button>
             </Link>
             <div className="gap-4 flex flex-row relative py-6">
                                 {[FaFacebook, FaInstagram, FaTwitter, FaLinkedin, SiTiktok].map((Icon, index) => (

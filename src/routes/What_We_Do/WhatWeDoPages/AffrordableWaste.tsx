@@ -52,7 +52,7 @@ const AffordableWaste = ()  => {
                 <Link to ="/whatwedo">
                 <button className="md:py-4 md:px-8 py-2 px-4 mt-20 rounded-full bg-[#818F39]
               lg:text-lg md:text-base text-sm text-white shadow-2xl border-transparent
-               hover:bg-[#184E35] font-bold" >View more programs</button>
+               hover:bg-[#184E35] font-bold transition-transform duration-[1000ms] hover:scale-110" >View more programs</button>
                 </Link>
             </div>
 

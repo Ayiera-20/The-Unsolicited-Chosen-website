@@ -10,7 +10,7 @@ const HelpClean = () =>{
             <p className="md:mb-20 mb-10 lg:text-lg  md:text-base text-sm">Give today. Be the difference.</p>
             </AnimatedText>
             <Link to ="/donate">
-            <button className="btn-primary ">Donate Today</button>
+            <button className="btn-primary transition-transform duration-[1000ms] hover:scale-110">Donate Today</button>
             </Link>
             
         </div>

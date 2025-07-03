@@ -18,22 +18,22 @@ export default function NavBar() {
                  
                 <nav>
                     <ul className="flex-row hidden lg:flex gap-12 md:text-lg lg:text-xl text-white font-medium">
-                        <Link to="/" className="hover:text-[#818F39] active:text-[#818F39]">Home</Link>
-                        <Link to="/about" className="hover:text-[#818F39] active:text-[#818F39]">About</Link>
-                        <Link to="/whatwedo" className="hover:text-[#818F39] active:text-[#818F39]">What we do</Link>
-                        <Link to="/getinvolved" className="hover:text-[#818F39] active:text-[#818F39]">Get Involved</Link>
-                        <Link to="/" className="hover:text-[#818F39] active:text-[#818F39]">Projects</Link>
+                        <Link to="/" className="hover:text-[#818F39] transition-transform duration-[1000ms] hover:scale-110 active:text-[#818F39]">Home</Link>
+                        <Link to="/about" className="hover:text-[#818F39] transition-transform duration-[1000ms] hover:scale-110 active:text-[#818F39]">About</Link>
+                        <Link to="/whatwedo" className="hover:text-[#818F39] transition-transform duration-[1000ms] hover:scale-110 active:text-[#818F39]">What we do</Link>
+                        <Link to="/getinvolved" className="hover:text-[#818F39] transition-transform duration-[1000ms] hover:scale-110 active:text-[#818F39]">Get Involved</Link>
+                        <Link to="/" className="hover:text-[#818F39] transition-transform duration-[1000ms] hover:scale-110 active:text-[#818F39]">Projects</Link>
               
                     </ul>
                 </nav>
                 <div className="gap-x-4  hidden lg:flex pr-10">
                   <Link to= "/donate">
-                  <button className="py-2.5 px-6 rounded-full border-2 border-[#A3B18A] text-white hover:bg-[#A3B18A] hover:text-black">Donate Now</button>
+                  <button className="py-2.5 px-6 rounded-full border-2 border-[#A3B18A] text-white hover:bg-[#A3B18A] transition-transform duration-[1000ms] hover:scale-110 hover:text-black">Donate Now</button>
                   </Link>
               
                 
                   <Link to="/contact">
-                  <button className="py-2.5 px-6 rounded-full bg-[#818F39] text-white border-transparent hover:bg-transparent hover:text-white border-2 hover:border-[#818F39]" >Contact Us</button>
+                  <button className="py-2.5 px-6 rounded-full bg-[#818F39] text-white border-transparent hover:bg-transparent transition-transform duration-[1000ms] hover:scale-110 hover:text-white border-2 hover:border-[#818F39]" >Contact Us</button>
                   </Link>
                 
                 </div>

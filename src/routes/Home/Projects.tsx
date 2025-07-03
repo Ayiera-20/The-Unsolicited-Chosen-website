@@ -10,7 +10,7 @@ const Projects = () =>{
         <div className="md:px-20 md:py-30 px-10 py-15">
             <div className="flex flex-row  gap-4 md:justify-between pb-8 md:justify-items-stretch justify-center items-center">
                 <h2 className="lg:text-[3.125rem] md:text-[2.5rem] text-[2rem] text-center text-[#184E35] slide">Our Projects</h2>
-                <button className="btn-primary md:block hidden">Discover More →</button>
+                <button className="btn-primary md:block hidden transition-transform duration-[1000ms] hover:scale-110">Discover More →</button>
             </div>
             <p className="italic font-bold pb-12 text-[#184E35] lg:text-lg  md:text-base text-sm md:text-left text-center">Transforming our communities, one action at a time.</p>
             <AnimatedText>
