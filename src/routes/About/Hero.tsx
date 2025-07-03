@@ -1,15 +1,39 @@
-import recyc from "../../assets/images/Intro-background.jpg"
-import NavBar from "../../components/navbar";
 
+import NavBar from "../../components/navbar";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay } from "swiper/modules";
+import "swiper/css";
+
+
+import bg from "../../assets/images/collectingGarbage.jpg"
+import bg1 from "../../assets/images/nature.jpg"
+import recyc from "../../assets/images/Intro-background.jpg"
+
+const backgrounds = [recyc, bg, bg1];
 const Hero = () => {
     return(
         <div> 
-            <div className="relative md:h-screen h-[90vh] w-full bg-cover bg-center bg-no-repeat"
-            style={{backgroundImage: `url(${recyc})`}}
-            >
-            <NavBar />
-
-            <div className="flex flex-col md:flex-row items-center justify-center backdrop-blur-sm absolute bottom-0 left-0 w-full md:h-[40vh] h-auto   lg:gap-x-20 md:gap-0 gap-2 text-white text-center md:text-left bg-black/30 border-t-2 border-[#799434] pt-10">
+            <div className="relative md:h-screen h-[90vh]">
+                <Swiper
+                    modules={[Autoplay]}
+                    direction="vertical"
+                    autoplay={{ delay: 1000, disableOnInteraction: false }}
+                    loop
+                    className="absolute top-0 left-0 w-full h-full z-0"
+                >
+                {backgrounds.map((bg, index) => (
+                <SwiperSlide key={index}>
+                    <div
+                    className="w-full h-full bg-cover bg-center"
+                    style={{ backgroundImage: `url(${bg})` }}
+                    />
+                </SwiperSlide>
+                ))}
+                </Swiper>
+  <div className="relative z-20">
+    <NavBar />
+    
+    <div className="flex flex-col md:flex-row items-center justify-center backdrop-blur-sm absolute bottom-0 left-0 w-full md:h-[40vh] h-auto   lg:gap-x-20 md:gap-0 gap-2 text-white text-center md:text-left bg-black/30 border-t-2 border-[#799434] pt-10">
                 <div className="md:pr-20">
                     <h1 className="text-[1.75rem] md:text-[2rem] lg:text-[2.25rem] md:pl-10">About</h1>
                 </div>
@@ -29,6 +53,10 @@ const Hero = () => {
                 </div>
             
             </div>
+  </div>
+            
+
+            
         </div>
     )
 }

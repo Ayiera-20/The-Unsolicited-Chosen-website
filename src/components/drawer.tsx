@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { IoClose } from "react-icons/io5";
 import { PiListBold } from "react-icons/pi"; 
+import { Link } from "react-router-dom";
 
 interface DrawerMenu {
   className?: string;
@@ -39,20 +40,6 @@ const DrawerMenu = ({ className = "" }: DrawerMenu) => {
           </button>
         </div>
         <ul className="flex flex-col gap-2 mt-10 text-lg">
-<<<<<<< Updated upstream
-          {["Home", "About", "What we do", "Projects", "Get invloved"].map(
-            (item) => (
-              <li
-                key={item}
-                className="block p-2 hover:bg-[#afdfaa] active:bg-[#afdfaa] rounded-md transition-colors duration-150"
-              >
-                <a href="#" onClick={handleClose}>
-                  {item}
-                </a>
-              </li>
-            )
-          )}
-=======
           {[
             { name: "Home", path: "/" },
             { name: "About", path: "/about" },
@@ -69,7 +56,6 @@ const DrawerMenu = ({ className = "" }: DrawerMenu) => {
               </Link>
             </li>
           ))}
->>>>>>> Stashed changes
         </ul>
         <div className="flex flex-col gap-2 mt-10 text-lg">
           <p className="hover:bg-[#afdfaa] block p-2 rounded-md">Donate Now</p>
