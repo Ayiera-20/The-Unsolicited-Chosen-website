@@ -23,7 +23,7 @@ const WhatWeDo = () => {
                 <NavBar />
             </div>
             
-            <div className="md:py-30 py-15 flex flex-col items-center justify-center">
+            <div className="md:py-30 py-15 flex flex-col items-center justify-center head-fade">
                  <h1 className="px-10 text-[2.5rem] md:text-[3.125rem] lg:text-[4rem] text-[#184E35] text-center md:pb-15 pb-10">What we do</h1>
                 <p className="px-10 lg:text-lg  md:text-base text-sm  md:max-w-270 w-auto pb-10">At The Unsolicited Chosen, we are committed to restoring dignity to our communities through environmental action. 
                     Our work includes organizing regular community cleanups, offering affordable waste management solutions for underserved areas, 
@@ -37,7 +37,6 @@ const WhatWeDo = () => {
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 lg:gap-10 lg:mb-20  lg:px-2">
                 {items.map((item, index) => (
-                    <AnimatedText>
                     <div key={index} className="relative lg:h-120 lg:w-150 md:w-100 h-80 w-80 bg-cover bg-center bg-no-repeat text-center flex justify-center  items-center text-white group transition duration-300 flex-col"
                         style={{backgroundImage: `url(${item.Image})`}}>
                             <div className="absolute inset-0 bg-black/70 transition duration-300"></div>
@@ -57,7 +56,6 @@ const WhatWeDo = () => {
                             </div>
 
                     </div>
-                    </AnimatedText>
                 ))} 
             </div>
             </div>
