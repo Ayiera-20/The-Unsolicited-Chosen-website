@@ -189,3 +189,58 @@
   animation: bgFade 1.5s ease-in-out forwards;
   animation-delay: 0.2s;
 }
+
+
+@keyframes zoomIn {
+  0% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.animate-zoom-in {
+  animation: zoomIn 20s ease-in-out infinite alternate;
+}
+
+
+@keyframes zoomOut {
+  0% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.animate-zoom-out {
+  animation: zoomIn 10s  forwards infinite;
+  animation-timing-function: cubic-bezier(0.25, 1, 0.5, 1);
+
+}
+
+
+
+@keyframes revealSlide {
+  0% {
+    transform: translateY(0%);
+  }
+  100% {
+    transform: translateY(-100%);
+  }
+}
+
+.animate-reveal-slide {
+  animation: revealSlide 1s ease-in-out forwards;
+}
+
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+/*  */
+

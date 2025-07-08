@@ -3,6 +3,7 @@ import children from "../../assets/images/children.jpg"
 import recyc from "../../assets/images/Intro-background.jpg"
 import { Link } from "react-router-dom";
 import AnimatedText from "../../components/AnimatedText";
+import ScrollImageReveal from "../../components/ScrollRevealImage";
 
 
 const Projects = () =>{
@@ -20,15 +21,21 @@ const Projects = () =>{
             
             <div className="grid grid-cols-1 lg:grid-cols-2 auto-rows-min space-y-8 md:gap-4">
                 <div className="space-y-4 w-full h-auto">
-                    <img className="w-116.5 md:h-74.5 h-auto rounded-xl" src={veg} alt="" />
+                    <ScrollImageReveal>
+                    <img className="w-116.5 md:h-74.5 h-auto rounded-xl animate-zoom-out" src={veg} alt="" />
+                    </ScrollImageReveal>
                     <p className="lg:text-lg  md:text-base text-sm font-bold">Community Cleanups</p>
                 </div>
                 <div className="flex flex-col space-y-4 w-full h-auto">
-                    <img className="lg:w-159.5 lg:h-191.5 md:w-140 md:h-160 rounded-xl object-cover" src={recyc} alt="" />
+                    <ScrollImageReveal>
+                    <img className="lg:w-159.5 lg:h-191.5 md:w-140 md:h-160 rounded-xl object-cover animate-zoom-out" src={recyc} alt="" />
+                    </ScrollImageReveal>
                     <p className="lg:text-lg  md:text-base text-sm font-bold">Affordable Waste Solutions</p>
                 </div>
                 <div className="flex flex-col space-y-4 w-full h-auto lg:-mt-100">
-                    <img className="w-116.5 md:h-74.5 h-auto rounded-xl" src={children} alt="" />
+                    <ScrollImageReveal>
+                    <img className="w-116.5 md:h-74.5 h-auto rounded-xl animate-zoom-out" src={children} alt="" />
+                    </ScrollImageReveal>
                     <p className="lg:text-lg  md:text-base text-sm font-bold">Faith & Hope</p>
                 </div>
                 

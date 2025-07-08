@@ -1,6 +1,7 @@
 import { useState } from "react";
 import clean from "../../assets/images/Happy volunteers cleaning city park from garbage.jpg"
 import AnimatedText from "../../components/AnimatedText";
+import ScrollImageReveal from "../../components/ScrollRevealImage";
 const buttonColors = [
   { bg: "bg-[#184E35]", text: "text-white", border: "border-[#184E35]" }, // Who we are
   { bg: "bg-[#A3B18A]", text: "text-black", border: "border-[#A3B18A]" }, // Mission
@@ -64,8 +65,10 @@ const Mission = () => {
             </div>
                 
             </div>
+            <ScrollImageReveal>
+            <img className="max-w-2xl md:h-150 h-auto md:pt-20 pt-10 animate-zoom-out" src={clean} alt="" />
+            </ScrollImageReveal>
             
-            <img className="max-w-2xl md:h-150 h-auto md:pt-20 pt-10" src={clean} alt="" />
         </div>
     )
 }

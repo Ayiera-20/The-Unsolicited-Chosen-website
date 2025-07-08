@@ -2,6 +2,8 @@
 import vegetation from "../../assets/images/abstract-creative-3d-sphere-with-vegetation.jpg"
 import children from "../../assets/images/children.jpg"
 import garbageCollection from "../../assets/images/collectingGarbage.jpg"
+import ScrollImageReveal from "../../components/ScrollRevealImage"
+
 
 
 const items = [
@@ -24,14 +26,16 @@ const CleanEnvironment = () => {
             <div className="flex flex-col lg:flex-row lg:gap-50 md:gap-30 justify-center items-center lg:items-start">
                 
                 <div className="flex relative w-[400px] h-[500px] items-center md:items-start justify-center md:justify-items-start">
-                <div className="absolute bg-white lg:w-113 lg:h-182 md:w-100 md:h-100 w-60 h-80  bg-cover bg-center bg-no-repeat"
-                        style={{backgroundImage: `url(${vegetation})`}}>
-                    </div>
-                    <div className="md:top-70 lg:top-90 top-80 md:-left-40 left-10 bg-white  w-25 h-25 md:w-70 md:h-70  bg-cover bg-center bg-no-repeat  absolute"
+                     <ScrollImageReveal>
+                        <div className="absolute bg-white lg:w-113 lg:h-182 md:w-100 md:h-100 w-60 h-80  bg-cover bg-center bg-no-repeat animate-zoom-out"
+                                style={{backgroundImage: `url(${vegetation})`}}>
+                        </div>
+                        </ScrollImageReveal>
+                    <div className="md:top-70 lg:top-90 top-80 md:-left-40 left-10 bg-white  w-25 h-25 md:w-70 md:h-70  bg-cover bg-center bg-no-repeat  absolute animate-zoom-out"
                         style={{backgroundImage: `url(${children})`}}>
                     </div>
                     
-                    <div className=" bottom-80 md:-right-40 right-10 bg-white md:w-58 md:h-58 w-20 h-20 bg-cover bg-center bg-no-repeat absolute"
+                    <div className=" bottom-80 md:-right-40 right-10 bg-white md:w-58 md:h-58 w-20 h-20 bg-cover bg-center bg-no-repeat absolute animate-zoom-out"
                         style={{backgroundImage: `url(${garbageCollection})`}}>
                     </div>
                 </div>
