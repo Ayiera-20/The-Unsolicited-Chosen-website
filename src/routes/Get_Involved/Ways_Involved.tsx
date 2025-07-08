@@ -21,7 +21,7 @@ const WaysInvolved = () => {
                         <img className="md:w-50 md:h-66.5" src={items.image} alt="" />
                         <h3 className="max-w-58 font-bold lg:text-xl md:text[1.125rem] text-[1rem]">{items.heading}</h3>
                         <p className="max-w-55 lg:text-lg  md:text-base text-sm">{items.Description}</p>
-                        <a className="font-semibold text-[1rem] hover:text-[#A3B18A] text-[#818F39]" href={items.link}>{items.linkText}</a>
+                        <a className="font-semibold text-[1rem] hover:text-[#A3B18A] text-[#818F39] transition duration-300" href={items.link}>{items.linkText}</a>
                     </div>
                     </AnimatedText>
                 ))}

@@ -12,7 +12,7 @@ const SendMessage = () => {
                         <input className="placeholder:font-semibold bg-white p-2" id="name" type="name" placeholder="Your Name" />
                         <input className="placeholder:font-bold bg-white p-2" id="email" type="email" placeholder="Your Email" />
                         <textarea className="placeholder:font-bold bg-white p-2" id="message" name="tmessage" rows={4} placeholder="Your Message" />
-                        <button className="md:mx-30 mx-20 md:py-4 px-8 py-2 rounded-full bg-[#818F39] border-transparent hover:bg-transparent hover:text-[#A3B18A] border-2 hover:border-[#A3B18A] text-white font-bold" >Submit</button>
+                        <button className="md:mx-30 mx-20 md:py-4 px-8 py-2 rounded-full bg-[#818F39] border-transparent hover:bg-transparent hover:text-[#A3B18A] border-2 hover:border-[#A3B18A] text-white font-bold transition duration-300" >Submit</button>
                     </form>
 
             </div>
