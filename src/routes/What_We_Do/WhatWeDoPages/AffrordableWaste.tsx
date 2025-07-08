@@ -5,6 +5,7 @@ import Footer from "../../../components/footer";
 import { useEffect } from "react";
 import { Link } from "react-router-dom";
 import AnimatedText from "../../../components/AnimatedText";
+import ScrollImageReveal from "../../../components/ScrollRevealImage";
 
 const AffordableWaste = ()  => {
     useEffect(() => {
@@ -30,11 +31,13 @@ const AffordableWaste = ()  => {
                     <p className="lg:text-lg  md:text-base text-sm"> We also install labeled bins (organic, recyclable, and others) to promote better waste management at the household level.</p>
                     </AnimatedText>
                 </div>
-
-                <div className="w-125 lg:h-136 h-80 bg-cover bg-center bg-no-repeat"
+                <ScrollImageReveal>
+                <div className="w-125 lg:h-136 h-80 bg-cover bg-center bg-no-repeat animate-zoom-out"
                 style={{backgroundImage: `url(${garbage})`}}
                 >
                 </div>
+                </ScrollImageReveal>
+
             </div>
 
             <div className="md:px-20 px-10 md:py-30 py-15 flex flex-col items-center justify-center bg-[#F5FAF6] text-center md:text-left">
@@ -45,8 +48,12 @@ const AffordableWaste = ()  => {
                 </AnimatedText>
 
                 <div className="flex gap-10 items-center justify-center md:pt-20 pt-10">
-                    <img className="lg:w-161 lg:h-85 md:w-80 w-50 h-auto" src={garbage} alt="" />
-                    <img className="lg:w-116 lg:h-86 md:w-60 w-50 h-auto" src={garbage} alt="" />
+                    <ScrollImageReveal>
+                        <img className="lg:w-161 lg:h-85 md:w-80 w-50 h-auto animate-zoom-out" src={garbage} alt="" />
+                    </ScrollImageReveal>
+                    <ScrollImageReveal>
+                        <img className="lg:w-116 lg:h-86 md:w-60 w-50 h-auto animate-zoom-out" src={garbage} alt="" />
+                    </ScrollImageReveal>
                 </div>
 
                 <Link to ="/whatwedo">
@@ -55,9 +62,6 @@ const AffordableWaste = ()  => {
                hover:bg-[#184E35] font-bold transition-transform duration-[1000ms] hover:scale-110" >View more programs</button>
                 </Link>
             </div>
-
-            
-            
             <Footer />
 
             
