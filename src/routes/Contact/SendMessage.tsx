@@ -2,7 +2,7 @@ import green from "../../assets/images/beautiful-japanese-forest-landscape.jpg"
 import AnimatedText from "../../components/AnimatedText";
 const SendMessage = () => {
     return(
-        <div className="bg-[#F5FAF6] md:py-20 py-10">
+        <div id="message-section" className="bg-[#F5FAF6] md:py-20 py-10">
             <AnimatedText>
             <h2 className=" md:text-[2rem] lg:text-[2.5rem] text-2xl pb-30 text-center text-[#184E35]">Send Your Message</h2>
             </AnimatedText>

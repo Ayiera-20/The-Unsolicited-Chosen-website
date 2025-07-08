@@ -7,6 +7,7 @@ type ReusableHeroSectionProps = {
   description2: string;
   button?: string;
   height?: string;
+  scrollToId?: string;
 };
 
 const ReusableHeroSection = ({
@@ -15,6 +16,7 @@ const ReusableHeroSection = ({
   description,
   description2,
   button,
+  scrollToId,
   height = 'h-screen',
 }: ReusableHeroSectionProps) => {
   return (
@@ -31,7 +33,19 @@ const ReusableHeroSection = ({
                 <h1 className="text-[1.75rem] md:text-[3.125rem] lg:text-[4rem] pb-6 text-[#F5F1E3] slide">{heading}</h1>
                 <p className=" lg:text-xl  md:text-lg text-[1rem]">{description}</p>
                 <p className=" lg:text-xl  md:text-lg text-[1rem]">{description2}</p>
-                {button && <button className="discover-button">{button}</button>}
+                {button && (
+                  <button
+                    className="discover-button mt-4"
+                    onClick={() => {
+                      if (scrollToId) {
+                        document.getElementById(scrollToId)?.scrollIntoView({ behavior: 'smooth' });
+                      }
+                    }}
+                  >
+                    {button}
+                  </button>
+                )}
+
             </div>
 
         </div>

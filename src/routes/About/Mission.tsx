@@ -28,7 +28,7 @@ const slides  = [
 const Mission = () => {
     const [selectedIndex, setSelectedIndex] = useState(0)
     return (
-        <div className="w-full md:px-20 px-10 md:py-30 py-15 flex flex-col lg:flex-row">
+        <div id="mission-section" className="w-full md:px-20 px-10 md:py-30 py-15 flex flex-col lg:flex-row">
             <div>
                 <div className="flex flex-wrap gap-4">
                 {slides.map((slide, index) => {

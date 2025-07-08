@@ -27,7 +27,7 @@ const OurStory = () => {
                 </div>
                 </AnimatedText>
                 
-                <img className="md:w-78 md:h-117" src={person} alt="" />
+                <img className="md:w-78 md:h-117 animate-zoom-in" src={person} alt="" />
 
             </div>
 

@@ -14,6 +14,7 @@ const Donate = () => {
                     description2="tempor incididunt ut labore et dolore magna aliqua."
                     button="Join Us"
                     height="h-screen"
+                    scrollToId="donation-section"
             />
             <DonationOptions />
             <DonatingCause />

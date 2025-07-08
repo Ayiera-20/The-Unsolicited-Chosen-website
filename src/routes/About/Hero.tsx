@@ -22,7 +22,10 @@ const Hero = () => {
                             <p className="mb-2 lg:text-2xl text-base md:text-lg md:max-w-117 px-2 md:px-0">
                             Committed to transforming Nairobi through cleaner spaces, empowered communities, and practical hope
                             </p>
-                            <button className="discover-button">Discover</button>
+                            <button className="discover-button" onClick={() => {
+                                document.getElementById("mission-section")?.scrollIntoView({ behavior: "smooth" });
+                                }}>Discover
+                            </button>
                         </div>
                      </div>
 

@@ -19,6 +19,7 @@ const GetInvolved = () => {
                     description2="Serve, give, grow."
                     button="Join Us"
                     height="h-screen"
+                    scrollToId="clean-section"
                 />
             </div>
             <HelpClean />

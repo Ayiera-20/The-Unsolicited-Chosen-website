@@ -9,7 +9,7 @@ const payments =[
 ]
 const DonationOptions = () => {
     return(
-        <div className="md:px-20 md:py-30 py-15 px-10">
+        <div id="donation-section" className="md:px-20 md:py-30 py-15 px-10">
             <h2 className="lg:text-[3.125rem] md:text-[2.5rem] text-[2rem] mb-20 text-center text-[#184E35] slide">Your donation options</h2>
             <AnimatedText>
             <div className="grid gird-col md:grid-cols-2 lg:grid-cols-4 gap-10">

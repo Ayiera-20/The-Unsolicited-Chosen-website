@@ -15,6 +15,8 @@ const ContactUs = () => {
                     description2="We'd love to hear from you!"
                     button="Send a messsage"
                     height="h-[80vh]"
+                    scrollToId="message-section"
+                    
                 />
                 <GetStarted />
                 <SendMessage />
