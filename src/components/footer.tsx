@@ -32,36 +32,36 @@ const Footer = () =>{
                         </div>
                     </div>
                 </div>
-                <div className='w-1/2 md:w-1/3 lg:w-full flex flex-col gap-4 lg:text-lg md:text-base text-sm font-semibold'>
-                    <p className='sub-sub-headings lg:text-xl md:text-lg text-[1rem] '>Navigation</p>
+                <div className='w-1/2 md:w-1/3 lg:w-full flex flex-col gap-4 lg:text-lg md:text-base text-sm'>
+                    <p className='sub-sub-headings lg:text-xl md:text-lg text-[1rem] font-semibold'>Navigation</p>
                     <a className='' href="">Home</a>
                     <a href="">About Us</a>
                     <a href="">What we do</a>
                     <a href="">Programs</a> 
                 </div>
-                 <div className='w-1/2 md:w-1/3 lg:w-full flex flex-col gap-4 lg:text-lg md:text-base text-sm font-semibold'>
-                    <p className='sub-sub-headings lg:text-xl md:text-lg text-[1rem] '>Quick Links</p>
+                 <div className='w-1/2 md:w-1/3 lg:w-full flex flex-col gap-4 lg:text-lg md:text-base text-sm'>
+                    <p className='sub-sub-headings lg:text-xl md:text-lg text-[1rem] font-semibold'>Quick Links</p>
                     <a className='' href="">Home</a>
                     <a href="">About Us</a>
                     <a href="">What we do</a>
                     <a href="">Programs</a> 
                 </div>
-                 <div className='w-1/2 md:w-1/3 lg:w-full flex flex-col gap-4 lg:text-lg md:text-base text-sm font-semibold'>
-                    <p className='sub-sub-headings lg:text-xl md:text-lg text-[1rem] '>Explore</p>
+                 <div className='w-1/2 md:w-1/3 lg:w-full flex flex-col gap-4 lg:text-lg md:text-base text-sm'>
+                    <p className='sub-sub-headings lg:text-xl md:text-lg text-[1rem] font-semibold '>Explore</p>
                     <a className='' href="">Home</a>
                     <a href="">About Us</a>
                     <a href="">What we do</a>
                     <a href="">Programs</a> 
                 </div>
-                <div className='w-1/2 md:w-1/3 lg:w-full flex flex-col mb-24 gap-4 lg:text-lg md:text-base text-sm font-semibold'>
-                    <p className='sub-sub-headings sub-sub-headings lg:text-xl md:text-lg text-[1rem]'>Blog</p>
+                <div className='w-1/2 md:w-1/3 lg:w-full flex flex-col mb-24 gap-4 lg:text-lg md:text-base text-sm'>
+                    <p className='sub-sub-headings sub-sub-headings lg:text-xl md:text-lg text-[1rem] font-semibold'>Blog</p>
                     <a href="hover:text-[#afdfaa]">Home</a>
                     <a href="">About Us</a>
                     <a href="">What we do</a>
                     <a href="">Programs</a> 
                 </div>
-                <div className='w-full md:w-1/3 lg:w-full flex flex-col  gap-4 lg:text-lg md:text-base text-sm font-semibold'>
-                    <p className='sub-sub-headings sub-sub-headings lg:text-xl md:text-lg text-[1rem]'>Information</p>
+                <div className='w-full md:w-1/3 lg:w-full flex flex-col  gap-4 lg:text-lg md:text-base text-sm'>
+                    <p className='sub-sub-headings sub-sub-headings lg:text-xl md:text-lg text-[1rem] font-semibold'>Information</p>
                     <a href="">+254 757 802 807</a>
                     <a href="">theunsolicitedchosen@gmail.com</a>
                     <a href="">theunsolicitedchosen@outlook.com</a>
