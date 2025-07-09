@@ -34,40 +34,40 @@ const Footer = () =>{
                 </div>
                 <div className='w-1/2 md:w-1/3 lg:w-full flex flex-col gap-4 lg:text-lg md:text-base text-sm'>
                     <p className='sub-sub-headings lg:text-xl md:text-lg text-[1rem] font-semibold'>Navigation</p>
-                    <a className='hover:text-[#A3B18A] transition duration-300' href="">Home</a>
-                    <a className='hover:text-[#A3B18A] transition duration-300' href="">About Us</a>
-                    <a className='hover:text-[#A3B18A] transition duration-300' href="">What we do</a>
-                    <a className='hover:text-[#A3B18A] transition duration-300' href="">Programs</a> 
+                    <a className='hover:text-[#818F39] transition duration-300' href="">Home</a>
+                    <a className='hover:text-[#818F39] transition duration-300' href="">About Us</a>
+                    <a className='hover:text-[#818F39] transition duration-300' href="">What we do</a>
+                    <a className='hover:text-[#818F39] transition duration-300' href="">Programs</a> 
                 </div>
                  <div className='w-1/2 md:w-1/3 lg:w-full flex flex-col gap-4 lg:text-lg md:text-base text-sm'>
                     <p className='sub-sub-headings lg:text-xl md:text-lg text-[1rem] font-semibold'>Quick Links</p>
-                    <a className='hover:text-[#A3B18A] transition duration-300' href="">Home</a>
-                    <a className='hover:text-[#A3B18A] transition duration-300' href="">About Us</a>
-                    <a className='hover:text-[#A3B18A] transition duration-300' href="">What we do</a>
-                    <a className='hover:text-[#A3B18A] transition duration-300' href="">Programs</a> 
+                    <a className='hover:text-[#818F39] transition duration-300' href="">Home</a>
+                    <a className='hover:text-[#818F39] transition duration-300' href="">About Us</a>
+                    <a className='hover:text-[#818F39] transition duration-300' href="">What we do</a>
+                    <a className='hover:text-[#818F39] transition duration-300' href="">Programs</a> 
                 </div>
                  <div className='w-1/2 md:w-1/3 lg:w-full flex flex-col gap-4 lg:text-lg md:text-base text-sm'>
                     <p className='sub-sub-headings lg:text-xl md:text-lg text-[1rem] font-semibold '>Explore</p>
-                    <a className='hover:text-[#A3B18A] transition duration-300' href="">Home</a>
-                    <a className='hover:text-[#A3B18A] transition duration-300' href="">About Us</a>
-                    <a className='hover:text-[#A3B18A] transition duration-300' href="">What we do</a>
-                    <a className='hover:text-[#A3B18A] transition duration-300' href="">Programs</a> 
+                    <a className='hover:text-[#818F39] transition duration-300' href="">Home</a>
+                    <a className='hover:text-[#818F39] transition duration-300' href="">About Us</a>
+                    <a className='hover:text-[#818F39] transition duration-300' href="">What we do</a>
+                    <a className='hover:text-[#818F39] transition duration-300' href="">Programs</a> 
                 </div>
                 <div className='w-1/2 md:w-1/3 lg:w-full flex flex-col mb-24 gap-4 lg:text-lg md:text-base text-sm'>
                     <p className='sub-sub-headings sub-sub-headings lg:text-xl md:text-lg text-[1rem] font-semibold'>Blog</p>
-                    <a className='hover:text-[#A3B18A] transition duration-300' href="hover:text-[#afdfaa]">Home</a>
-                    <a className='hover:text-[#A3B18A] transition duration-300' href="">About Us</a>
-                    <a className='hover:text-[#A3B18A] transition duration-300' href="">What we do</a>
-                    <a className='hover:text-[#A3B18A] transition duration-300' href="">Programs</a> 
+                    <a className='hover:text-[#818F39] transition duration-300' href="hover:text-[#afdfaa]">Home</a>
+                    <a className='hover:text-[#818F39] transition duration-300' href="">About Us</a>
+                    <a className='hover:text-[#818F39] transition duration-300' href="">What we do</a>
+                    <a className='hover:text-[#818F39] transition duration-300' href="">Programs</a> 
                 </div>
                 <div className='w-full md:w-1/3 lg:w-full flex flex-col  gap-4 lg:text-lg md:text-base text-sm'>
                     <p className='sub-sub-headings sub-sub-headings lg:text-xl md:text-lg text-[1rem] font-semibold'>Information</p>
-                    <a className='hover:text-[#A3B18A] transition duration-300' href="">+254 757 802 807</a>
-                    <a className='hover:text-[#A3B18A] transition duration-300' href="">theunsolicitedchosen@gmail.com</a>
-                    <a className='hover:text-[#A3B18A] transition duration-300' href="">theunsolicitedchosen@outlook.com</a>
+                    <a className='hover:text-[#818F39] transition duration-300' href="">+254 757 802 807</a>
+                    <a className='hover:text-[#818F39] transition duration-300' href="">theunsolicitedchosen@gmail.com</a>
+                    <a className='hover:text-[#818F39] transition duration-300' href="">theunsolicitedchosen@outlook.com</a>
                     <Link to ="/contact">
                     <button className="lg:text-lg md:text-base text-sm  md:mt-10 mt-2 md:py-4 md:px-8 px-4 py-2 rounded-full  text-white border-transparent
-                     hover:bg-transparent border-2 hover:border-[#A3B18A] hover:text-[#A3B18A] transition duration-300 bg-[#818F39]" >Contact Us
+                     hover:bg-transparent border-2 hover:border-[#A3B18A] hover:text-[#A3B18A] transition duration-300 bg-[#818F39] font-bold" >Contact Us
                      </button>
                     </Link>
                     
