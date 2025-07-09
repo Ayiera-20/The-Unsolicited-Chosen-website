@@ -19,9 +19,9 @@ const items = [
 const WhatWeDo = () => {
     return (
         <div>
-            <div className="bg-[#184E35]">
-                <NavBar />
-            </div>
+            
+                <NavBar forceSolidBg={true} />
+
             
             <div className="md:py-30 py-15 flex flex-col items-center justify-center head-fade">
                  <h1 className="px-10 text-[2.5rem] md:text-[3.125rem] lg:text-[4rem] text-[#184E35] text-center md:pb-15 pb-10">What we do</h1>

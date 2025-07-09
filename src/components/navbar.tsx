@@ -2,11 +2,50 @@
 import { Link } from 'react-router-dom';
 import DrawerMenu from "./drawer";
 import logo from "../assets/images/_logo.jpeg"
+import { useState, useEffect } from 'react';
 
-export default function NavBar() {
+type NavBarProps = {
+  forceSolidBg?: boolean;
+};
+
+export default function NavBar({ forceSolidBg = false }: NavBarProps) {
+  const [scrollDirection, setScrollDirection] = useState<"up" | "down">("up");
+  const [scrollY, setScrollY] = useState(0);
+
+  useEffect(() => {
+    let lastScrollY = window.scrollY;
+
+    const handleScroll = () => {
+      const currentScrollY = window.scrollY;
+      setScrollY(currentScrollY); // ✅ Update scrollY
+
+      if (currentScrollY > lastScrollY && currentScrollY > 100) {
+        setScrollDirection("down");
+      } else if (currentScrollY < lastScrollY) {
+        setScrollDirection("up");
+      }
+
+      lastScrollY = currentScrollY;
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
+  const bgColor =
+    forceSolidBg || (scrollDirection === "up" && scrollY > 50)
+      ? "bg-[#184E35]"
+      : "bg-transparent";
  
     return (
-        <div className="hover:bg-[#184E35] whitespace-nowrap">
+        <div
+      className={`
+        fixed top-0 left-0 w-full z-60 
+        transition-all duration-300 hover:bg-[#184E35]
+        ${scrollDirection === "down" ? "-translate-y-full" : "translate-y-0"} 
+        ${bgColor}
+      `}
+    >
              <div className="flex lg:justify-between lg:gap-8 lg:py-8">
                 <div className="flex items-center gap-x-6">
                   <DrawerMenu />
