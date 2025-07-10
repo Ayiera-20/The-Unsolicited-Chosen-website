@@ -2,7 +2,10 @@
 import vegetation from "../../assets/images/abstract-creative-3d-sphere-with-vegetation.jpg"
 import children from "../../assets/images/children.jpg"
 import garbageCollection from "../../assets/images/collectingGarbage.jpg"
-import ScrollImageReveal from "../../components/ScrollRevealImage"
+import { motion } from "framer-motion";
+import { useRef } from "react";
+import { useInView } from "framer-motion";
+
 
 
 
@@ -20,17 +23,28 @@ const items = [
 
 
 const CleanEnvironment = () => {
+  const textRef = useRef(null);
+  const isInView = useInView(textRef, { once: false, margin: "-100px" });
+
     return (
-        <div className="md:px-20  md:py-30 py-15 bg-[#F5FAF6] ">
+    <motion.section
+    ref={textRef}
+    initial={{ backgroundColor: "#ffffff" }}
+    animate={{ backgroundColor: isInView ? "#E6FFFA" : "#F5FAF6" }}
+    transition={{ duration: 1.2 }}
+    className="md:px-20 py-20"
+    style={{ backgroundColor: isInView ? "#E6FFFA" : "#F5FAF6" }} 
+    >
+
+
             <h2 className="lg:text-[3.125rem] md:text-[2.5rem] text-[2rem] text-center md:pb-25 text-[#184E35] slide">Why clean environment matters</h2>
             <div className="flex flex-col lg:flex-row lg:gap-50 md:gap-30 justify-center items-center lg:items-start">
                 
-                <div className="flex relative w-[400px] h-[500px] items-center md:items-start justify-center md:justify-items-start">
-                     <ScrollImageReveal>
-                        <div className="absolute bg-white lg:w-113 lg:h-182 md:w-100 md:h-100 w-60 h-80  bg-cover bg-center bg-no-repeat animate-zoom-out"
-                                style={{backgroundImage: `url(${vegetation})`}}>
-                        </div>
-                        </ScrollImageReveal>
+                <div className="lg:sticky lg:top-20 relative flex  w-[400px] h-[500px] items-center md:items-start justify-center md:justify-items-start">
+                    <div className="absolute bg-white lg:w-113 lg:h-182 md:w-100 md:h-100 w-60 h-80  bg-cover bg-center bg-no-repeat animate-zoom-out"
+                        style={{backgroundImage: `url(${vegetation})`}}>
+                    </div>
+                        
                     <div className="md:top-70 lg:top-90 top-80 md:-left-40 left-10 bg-white  w-25 h-25 md:w-70 md:h-70  bg-cover bg-center bg-no-repeat  absolute animate-zoom-out"
                         style={{backgroundImage: `url(${children})`}}>
                     </div>
@@ -39,7 +53,7 @@ const CleanEnvironment = () => {
                         style={{backgroundImage: `url(${garbageCollection})`}}>
                     </div>
                 </div>
-                <div className="space-y-10">
+                <div ref={textRef} className="space-y-10 overflow-y-auto">
                     {items.map((item, index) =>(
                         
                         <div key = {index} className="flex gap-8 px-10 md:px-0">
@@ -56,7 +70,8 @@ const CleanEnvironment = () => {
                 </div>
 
             </div>
-        </div>
+
+        </motion.section>
     )
 }
 
