@@ -16,11 +16,9 @@ const AboutSection = () => {
             </ScrollRevealImage>
             
             <ScrollRevealImage>
-
             <div className="md:w-78 md:h-100 w-70 h-80 bg-cover bg-center bg-no-repeat animate-zoom-out"
             style={{backgroundImage: `url(${savePlanet})`}}
             >
-
             </div>
             </ScrollRevealImage>
 

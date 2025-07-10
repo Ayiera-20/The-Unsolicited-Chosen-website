@@ -27,19 +27,18 @@ const DrawerMenu = ({ className = "" }: DrawerMenu) => {
 
       {/* Drawer */}
       <div
-        className={`fixed top-0 left-0 h-full md:w-1/2 w-3/4 bg-[#184E35] shadow-lg z-50 p-6 transform transition-transform duration-300 ease-in-out ${
-          isOpen ? "translate-x-0" : "-translate-x-full"
+        className={`fixed top-0 left-0 h-full md:w-1/2 w-3/4 bg-[#184E35] shadow-lg  p-6 transform transition-transform duration-300 ease-in-out z-100 ${
+          isOpen ? "translate-x-0" : "-translate-x-full z-100"
         } lg:hidden`}
       >
         <div className="flex justify-end">
           <button
             onClick={handleClose}
-            className="text-2xl text-[#818F39]] hover:bg-[#A3B18A] active:bg-[#A3B18A]"
+            className="text-2xl text-[#818F39] hover:bg-[#A3B18A] active:bg-[#A3B18A]"
           >
             <IoClose className="text-white" />
-          </button>
+          </button> 
         </div>
-         {/* Menu Links */}
         <ul className="flex flex-col gap-2 mt-10 text-lg">
           {[
             { name: "Home", path: "/" },
@@ -49,7 +48,7 @@ const DrawerMenu = ({ className = "" }: DrawerMenu) => {
           ].map((item) => (
             <li
               key={item.name}
-              className="block text-white p-2 hover:border-[#A3B18A] hover:bg-[#818F39] border border-transparent active:bg-[#A3B18] rounded-md transition-colors duration-150"
+              className="block text-white p-2 hover:border-[#A3B18A] hover:bg-[#818F39] border border-transparent active:bg-[#A3B18A] rounded-md transition-colors duration-150"
             >
               <Link to={item.path} onClick={handleClose}>
                 {item.name}
