@@ -1,7 +1,7 @@
 
 import { Link } from 'react-router-dom';
 import DrawerMenu from "./drawer";
-import logo from "../assets/images/_logo.jpeg"
+import logo from "../assets/images/tclogo.png"
 import { useState, useEffect } from 'react';
 
 type NavBarProps = {
@@ -50,8 +50,8 @@ export default function NavBar({ forceSolidBg = false }: NavBarProps) {
                 <div className="flex items-center gap-x-6">
                   <DrawerMenu />
                 </div>
-                <div className='hidden lg:flex gap-4 -ml-10'>
-                  <img className='h-14 w-14 object-cover rounded-full' src={logo} alt="logo" />
+                <div className='hidden lg:flex -ml-10'>
+                  <img className='h-35 w-35 object-cover rounded-full -mt-8' src={logo} alt="logo" />
                   <p className='text-xl logo-text text-[#F5F1E3] font-bold'>THE UNSOLICITED <br></br> CHOSEN</p>
                 </div>
                  
