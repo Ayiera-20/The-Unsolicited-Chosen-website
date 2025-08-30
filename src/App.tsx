@@ -8,6 +8,7 @@ import ContactUs from './routes/Contact/ContactUs';
 import Donate from './routes/Donate/Donate';
 import AffordableWaste from './routes/What_We_Do/WhatWeDoPages/AffrordableWaste';
 import ScrollToTop from './components/scrollTop'
+import Projects from './routes/Home/Projects';
 
 function App() {
 
@@ -20,6 +21,7 @@ function App() {
         <Route path="about" element={<About />} />
         <Route path="whatwedo" element={<WhatWeDo />} />
         <Route path="getinvolved" element={<GetInvolved />} />
+        <Route path="Projects" element={<Projects />} />
         <Route path="contact" element={<ContactUs />} />
         <Route path="donate" element={<Donate/>} />
         <Route path="affordablewaste" element={<AffordableWaste/>} />

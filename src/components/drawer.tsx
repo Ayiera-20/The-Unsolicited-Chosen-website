@@ -31,7 +31,16 @@ const DrawerMenu = ({ className = "" }: DrawerMenu) => {
           isOpen ? "translate-x-0" : "-translate-x-full"
         } lg:hidden`}
       >
-        <div className="flex justify-end">
+        {/* Logo Section */}
+        <div className="flex items-center justify-start mb-6 ml-2">
+          <img
+            src="src/assets/images/_logo.jpeg" // Replace with the actual path to your logo
+            alt="Logo"
+            className="h-18" // Adjust height as needed
+          />
+        </div>
+
+        <div className="absolute top-4 right-4">
           <button
             onClick={handleClose}
             className="text-2xl text-[#818F39]] hover:bg-[#A3B18A] active:bg-[#A3B18A]"
@@ -39,7 +48,8 @@ const DrawerMenu = ({ className = "" }: DrawerMenu) => {
             <IoClose className="text-white" />
           </button>
         </div>
-         {/* Menu Links */}
+
+        {/* Menu Links */}
         <ul className="flex flex-col gap-2 mt-10 text-lg">
           {[
             { name: "Home", path: "/" },
@@ -74,9 +84,7 @@ const DrawerMenu = ({ className = "" }: DrawerMenu) => {
           >
             Contact Us
           </Link>
-        
         </div>
-        
       </div>
     </>
   );
