@@ -5,14 +5,17 @@ const Projects = () => {
       <p className="italic font-bold pb-12 text-[#184E35] lg:text-lg md:text-base text-sm text-center">
         Transforming our communities, one action at a time.
       </p>
-      <p className="lg:text-lg md:text-base text-sm md:w-120.5 w-auto pb-20 text-center">
-        From cleaning up public spaces to teaching sustainable waste practices and planting trees, our programmes are practical, people-powered, and built to scale.
-      </p>
+      {/* Center this text */}
+      <div className="flex items-center justify-center h-full mb-12">
+        <p className="lg:text-lg md:text-base text-sm md:w-120.5 w-auto text-center">
+          From cleaning up public spaces to teaching sustainable waste practices and planting trees, our programmes are practical, people-powered, and built to scale.
+        </p>
+      </div>
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-        <div className="space-y-4">
+        <div className="space-y-12">
           <img
             className="w-full h-64 object-cover rounded-xl"
-            src="/path-to-image/project1.jpg" // Replace with actual image path
+            src="https://images.pexels.com/photos/9090747/pexels-photo-9090747.jpeg" // Replace with actual image path
             alt="Community Cleanups"
           />
           <h3 className="text-lg font-bold text-[#184E35]">Community Cleanups</h3>
@@ -20,10 +23,10 @@ const Projects = () => {
             Organizing community-driven cleanups to restore public spaces and promote environmental awareness.
           </p>
         </div>
-        <div className="space-y-4">
+        <div className="space-y-12">
           <img
             className="w-full h-64 object-cover rounded-xl"
-            src="/path-to-image/project2.jpg" // Replace with actual image path
+            src="https://images.pexels.com/photos/5029923/pexels-photo-5029923.jpeg" // Replace with actual image path
             alt="Affordable Waste Solutions"
           />
           <h3 className="text-lg font-bold text-[#184E35]">Affordable Waste Solutions</h3>

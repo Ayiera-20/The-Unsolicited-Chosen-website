@@ -40,10 +40,10 @@ const DrawerMenu = ({ className = "" }: DrawerMenu) => {
           />
         </div>
 
-        <div className="absolute top-4 right-4">
+        <div className="flex justify-end mt-0">
           <button
             onClick={handleClose}
-            className="text-2xl text-[#818F39]] hover:bg-[#A3B18A] active:bg-[#A3B18A]"
+            className="absolute top-4 right-4 text-2xl text-[#818F39]] hover:bg-[#A3B18A] active:bg-[#A3B18A] p-1.5 rounded-full"
           >
             <IoClose className="text-white" />
           </button>
