@@ -22,7 +22,7 @@ export default function NavBar() {
                         <Link to="/about" className="hover:text-[#818F39] active:text-[#818F39]">About</Link>
                         <Link to="/whatwedo" className="hover:text-[#818F39] active:text-[#818F39]">What we do</Link>
                         <Link to="/getinvolved" className="hover:text-[#818F39] active:text-[#818F39]">Get Involved</Link>
-                        <Link to="/" className="hover:text-[#818F39] active:text-[#818F39]">Projects</Link>
+                        <Link to="/projects" className="hover:text-[#818F39] active:text-[#818F39]">Projects</Link>
               
                     </ul>
                 </nav>

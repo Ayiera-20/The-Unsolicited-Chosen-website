@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import NavBar from "./navbar";
 
 type ReusableHeroSectionProps = {
@@ -6,6 +7,7 @@ type ReusableHeroSectionProps = {
   description: string;
   description2: string;
   button?: string;
+  buttonLink?: string; 
   height?: string;
 };
 
@@ -15,26 +17,32 @@ const ReusableHeroSection = ({
   description,
   description2,
   button,
-  height = 'h-screen',
+  buttonLink,
+  height = "h-screen",
 }: ReusableHeroSectionProps) => {
   return (
-    <div className={`relative lg:${height} md:h-[80vh] h-[64vh]  w-full bg-cover bg-center bg-no-repeat`}
-        style={{backgroundImage: `url(${backgroundImage})`}}
-        >
-            <div className="absolute inset-0 bg-black/50"></div>
-            <div className="relative">
-                <NavBar />
+    <div
+      className={`relative lg:${height} md:h-[80vh] h-[64vh] w-full bg-cover bg-center bg-no-repeat`}
+      style={{ backgroundImage: `url(${backgroundImage})` }}
+    >
+      <div className="absolute inset-0 bg-black/50"></div>
+      <div className="relative">
+        <NavBar />
+      </div>
 
-            </div>
-            
-            <div className="items-center relative flex flex-col justify-center h-full text-white text-center md:px-0 px-4">
-                <h1 className="text-[1.75rem] md:text-[3.125rem] lg:text-[4rem] pb-6 text-[#F5F1E3]">{heading}</h1>
-                <p className=" lg:text-xl  md:text-lg text-[1rem]">{description}</p>
-                <p className=" lg:text-xl  md:text-lg text-[1rem]">{description2}</p>
-                {button && <button className="discover-button">{button}</button>}
-            </div>
-
-        </div>
+      <div className="items-center relative flex flex-col justify-center h-full text-white text-center md:px-0 px-4">
+        <h1 className="text-[1.75rem] md:text-[3.125rem] lg:text-[4rem] pb-6 text-[#F5F1E3]">
+          {heading}
+        </h1>
+        <p className="lg:text-xl md:text-lg text-[1rem]">{description}</p>
+        <p className="lg:text-xl md:text-lg text-[1rem]">{description2}</p>
+        {button && buttonLink && (
+          <Link to={buttonLink}>
+            <button className="discover-button">{button}</button>
+          </Link>
+        )}
+      </div>
+    </div>
   );
 };
 
