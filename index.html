@@ -5,6 +5,15 @@
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vite + React + TS</title>
+    <script>
+      (function () {
+        const params = new URLSearchParams(window.location.search);
+        const p = params.get('p');
+        if (!p) return;
+        const base = '%BASE_URL%'.replace(/\/$/, '');
+        window.history.replaceState(null, '', base + p);
+      })();
+    </script>
   </head>
   <body>
     <div id="root"></div>
