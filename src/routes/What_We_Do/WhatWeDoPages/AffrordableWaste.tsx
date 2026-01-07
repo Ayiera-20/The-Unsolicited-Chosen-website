@@ -1,6 +1,15 @@
 import ReusableHeroSection from "../../../components/ReusableHeroSection";
-import volunteer from "../../../assets/images/collectingGarbage.jpg"
-import garbage from "../../../assets/images/2006.i602.009_volunteers_trash_out_flat.jpg"
+import volunteerJpg from "../../../assets/images/collectingGarbage.jpg"
+// @ts-expect-error Vite transforms query-string image imports at build time
+import volunteerJpgSrcSet from "../../../assets/images/collectingGarbage.jpg?w=640&w=960&w=1280&w=1600&w=1920&as=srcset"
+// @ts-expect-error Vite transforms query-string image imports at build time
+import volunteerWebpSrcSet from "../../../assets/images/collectingGarbage.jpg?format=webp&w=640&w=960&w=1280&w=1600&w=1920&as=srcset"
+
+import garbageJpg from "../../../assets/images/2006.i602.009_volunteers_trash_out_flat.jpg"
+// @ts-expect-error Vite transforms query-string image imports at build time
+import garbageJpgSrcSet from "../../../assets/images/2006.i602.009_volunteers_trash_out_flat.jpg?w=400&w=640&w=960&w=1280&w=1600&as=srcset"
+// @ts-expect-error Vite transforms query-string image imports at build time
+import garbageWebpSrcSet from "../../../assets/images/2006.i602.009_volunteers_trash_out_flat.jpg?format=webp&w=400&w=640&w=960&w=1280&w=1600&as=srcset"
 import Footer from "../../../components/footer";
 import { useEffect } from "react";
 import { Link } from "react-router-dom";
@@ -17,7 +26,13 @@ const AffordableWaste = ()  => {
             heading="Affordable Waste Solutions"
             description="Waste disposal should never be a privilege."
             description2="We work to make waste management simple, affordable, and accessible."
-            backgroundImage={volunteer}
+            backgroundImage={{
+                src: volunteerJpg,
+                srcSet: volunteerJpgSrcSet,
+                webpSrcSet: volunteerWebpSrcSet,
+                sizes: '100vw',
+                alt: 'Volunteers collecting waste',
+            }}
             height="h-[70vh]"
              />
              <div className="flex flex-col lg:flex-row items-center justify-center md:gap-20 gap-15 md:px-20 px-10 md:py-30 py-15">
@@ -32,10 +47,18 @@ const AffordableWaste = ()  => {
                     </AnimatedText>
                 </div>
                 <ScrollImageReveal>
-                <div className="w-125 lg:h-136 h-80 bg-cover bg-center bg-no-repeat animate-zoom-out"
-                style={{backgroundImage: `url(${garbage})`}}
-                >
-                </div>
+                                    <picture className="block w-125 lg:h-136 h-80">
+                                        <source type="image/webp" srcSet={garbageWebpSrcSet} sizes="(min-width: 1024px) 500px, 100vw" />
+                                        <img
+                                            className="h-full w-full object-cover object-center animate-zoom-out"
+                                            src={garbageJpg}
+                                            srcSet={garbageJpgSrcSet}
+                                            sizes="(min-width: 1024px) 500px, 100vw"
+                                            alt=""
+                                            loading="lazy"
+                                            decoding="async"
+                                        />
+                                    </picture>
                 </ScrollImageReveal>
 
             </div>
@@ -49,10 +72,32 @@ const AffordableWaste = ()  => {
 
                 <div className="flex gap-10 items-center justify-center md:pt-20 pt-10">
                     <ScrollImageReveal>
-                        <img className="lg:w-161 lg:h-85 md:w-80 w-50 h-auto animate-zoom-out" src={garbage} alt="" />
+                                                <picture>
+                                                    <source type="image/webp" srcSet={garbageWebpSrcSet} sizes="(min-width: 1024px) 644px, (min-width: 768px) 320px, 200px" />
+                                                    <img
+                                                        className="lg:w-161 lg:h-85 md:w-80 w-50 h-auto animate-zoom-out"
+                                                        src={garbageJpg}
+                                                        srcSet={garbageJpgSrcSet}
+                                                        sizes="(min-width: 1024px) 644px, (min-width: 768px) 320px, 200px"
+                                                        alt=""
+                                                        loading="lazy"
+                                                        decoding="async"
+                                                    />
+                                                </picture>
                     </ScrollImageReveal>
                     <ScrollImageReveal>
-                        <img className="lg:w-116 lg:h-86 md:w-60 w-50 h-auto animate-zoom-out" src={garbage} alt="" />
+                                                <picture>
+                                                    <source type="image/webp" srcSet={garbageWebpSrcSet} sizes="(min-width: 1024px) 464px, (min-width: 768px) 240px, 200px" />
+                                                    <img
+                                                        className="lg:w-116 lg:h-86 md:w-60 w-50 h-auto animate-zoom-out"
+                                                        src={garbageJpg}
+                                                        srcSet={garbageJpgSrcSet}
+                                                        sizes="(min-width: 1024px) 464px, (min-width: 768px) 240px, 200px"
+                                                        alt=""
+                                                        loading="lazy"
+                                                        decoding="async"
+                                                    />
+                                                </picture>
                     </ScrollImageReveal>
                 </div>
 

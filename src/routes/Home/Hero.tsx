@@ -1,4 +1,8 @@
-import heroImage from "../../assets/images/hero.jpg"
+import heroJpg from "../../assets/images/hero.jpg"
+// @ts-expect-error Vite transforms query-string image imports at build time
+import heroJpgSrcSet from "../../assets/images/hero.jpg?w=640&w=960&w=1280&w=1600&w=1920&as=srcset"
+// @ts-expect-error Vite transforms query-string image imports at build time
+import heroWebpSrcSet from "../../assets/images/hero.jpg?format=webp&w=640&w=960&w=1280&w=1600&w=1920&as=srcset"
 import NavBar from "../../components/navbar";
 import SectionTransition from "../../components/transition";
 
@@ -8,11 +12,20 @@ const HeroSection = () => {
     return(
     <SectionTransition bgColor="#184E35">
       <div className="relative h-[70vh] lg:h-screen w-full overflow-hidden">
-    
-      <div
-        className="absolute top-0 left-0 w-full h-full bg-cover bg-center animate-zoom-in z-0"
-        style={{ backgroundImage: `url(${heroImage})`}}
-      ></div>
+
+      <picture className="absolute top-0 left-0 z-0 h-full w-full">
+        <source type="image/webp" srcSet={heroWebpSrcSet} sizes="100vw" />
+        <img
+          className="h-full w-full object-cover object-center animate-zoom-in"
+          src={heroJpg}
+          srcSet={heroJpgSrcSet}
+          sizes="100vw"
+          alt=""
+          decoding="async"
+          loading="eager"
+          fetchPriority="high"
+        />
+      </picture>
 
 
       <div className="absolute inset-0 bg-black/50 z-10 pointer-events-none" />

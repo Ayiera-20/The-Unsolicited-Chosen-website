@@ -2,10 +2,28 @@ import NavBar from "../../components/navbar";
 import { useEffect, useState } from "react";
 import SectionTransition from "../../components/transition";
 
+import forestJpg from "../../assets/images/beautiful-japanese-forest-landscape.jpg";
+// @ts-expect-error Vite transforms query-string image imports at build time
+import forestJpgSrcSet from "../../assets/images/beautiful-japanese-forest-landscape.jpg?w=640&w=960&w=1280&w=1600&w=1920&as=srcset";
+// @ts-expect-error Vite transforms query-string image imports at build time
+import forestWebpSrcSet from "../../assets/images/beautiful-japanese-forest-landscape.jpg?format=webp&w=640&w=960&w=1280&w=1600&w=1920&as=srcset";
+
+import introJpg from "../../assets/images/Intro-background.jpg";
+// @ts-expect-error Vite transforms query-string image imports at build time
+import introJpgSrcSet from "../../assets/images/Intro-background.jpg?w=640&w=960&w=1280&w=1600&w=1920&as=srcset";
+// @ts-expect-error Vite transforms query-string image imports at build time
+import introWebpSrcSet from "../../assets/images/Intro-background.jpg?format=webp&w=640&w=960&w=1280&w=1600&w=1920&as=srcset";
+
+import heroJpg from "../../assets/images/hero.jpg";
+// @ts-expect-error Vite transforms query-string image imports at build time
+import heroJpgSrcSet from "../../assets/images/hero.jpg?w=640&w=960&w=1280&w=1600&w=1920&as=srcset";
+// @ts-expect-error Vite transforms query-string image imports at build time
+import heroWebpSrcSet from "../../assets/images/hero.jpg?format=webp&w=640&w=960&w=1280&w=1600&w=1920&as=srcset";
+
 const slides = [
-  "/src/assets/images/beautiful-japanese-forest-landscape.jpg",
-  "/src/assets/images/Intro-background.jpg",
-  "/src/assets/images/hero.jpg"
+    { src: forestJpg, srcSet: forestJpgSrcSet, webpSrcSet: forestWebpSrcSet },
+    { src: introJpg, srcSet: introJpgSrcSet, webpSrcSet: introWebpSrcSet },
+    { src: heroJpg, srcSet: heroJpgSrcSet, webpSrcSet: heroWebpSrcSet },
 ];
 
 const Hero = () => {
@@ -23,14 +41,25 @@ const Hero = () => {
         <SectionTransition> 
             <div className="relative md:h-screen h-[90vh] w-full overflow-hidden">
                 <div className="absolute inset-0 z-0">
-                    {slides.map((image, index) => (
-                    <div
-                        key={index}
-                        className={`absolute inset-0 w-full h-full bg-cover bg-center bg-no-repeat transition-opacity duration-1000 ease-in-out 
-                        ${index === current ? "opacity-100" : "opacity-0"}`}
-                        style={{ backgroundImage: `url(${image})` }}
-                    />
-                    ))}
+                                        {slides.map((image, index) => (
+                                            <picture
+                                                key={index}
+                                                className={`absolute inset-0 h-full w-full transition-opacity duration-1000 ease-in-out 
+                                                ${index === current ? "opacity-100" : "opacity-0"}`}
+                                            >
+                                                <source type="image/webp" srcSet={image.webpSrcSet} sizes="100vw" />
+                                                <img
+                                                    className="h-full w-full object-cover object-center"
+                                                    src={image.src}
+                                                    srcSet={image.srcSet}
+                                                    sizes="100vw"
+                                                    alt=""
+                                                    decoding="async"
+                                                    loading={index === current ? 'eager' : 'lazy'}
+                                                    fetchPriority={index === current ? 'high' : 'auto'}
+                                                />
+                                            </picture>
+                                        ))}
                 </div>
 
                 <div className="relative z-10">
