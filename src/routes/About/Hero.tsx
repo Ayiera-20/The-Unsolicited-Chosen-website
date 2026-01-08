@@ -1,20 +1,22 @@
-import NavBar from "../../components/navbar";
 import { useEffect, useState } from "react";
 import SectionTransition from "../../components/transition";
 
-import forestJpg from "../../assets/images/beautiful-japanese-forest-landscape.jpg";
+// @ts-expect-error Vite transforms query-string image imports at build time
+import forestJpg from "../../assets/images/beautiful-japanese-forest-landscape.jpg?w=1920";
 // @ts-expect-error Vite transforms query-string image imports at build time
 import forestJpgSrcSet from "../../assets/images/beautiful-japanese-forest-landscape.jpg?w=640&w=960&w=1280&w=1600&w=1920&as=srcset";
 // @ts-expect-error Vite transforms query-string image imports at build time
 import forestWebpSrcSet from "../../assets/images/beautiful-japanese-forest-landscape.jpg?format=webp&w=640&w=960&w=1280&w=1600&w=1920&as=srcset";
 
-import introJpg from "../../assets/images/Intro-background.jpg";
+// @ts-expect-error Vite transforms query-string image imports at build time
+import introJpg from "../../assets/images/Intro-background.jpg?w=1920";
 // @ts-expect-error Vite transforms query-string image imports at build time
 import introJpgSrcSet from "../../assets/images/Intro-background.jpg?w=640&w=960&w=1280&w=1600&w=1920&as=srcset";
 // @ts-expect-error Vite transforms query-string image imports at build time
 import introWebpSrcSet from "../../assets/images/Intro-background.jpg?format=webp&w=640&w=960&w=1280&w=1600&w=1920&as=srcset";
 
-import heroJpg from "../../assets/images/hero.jpg";
+// @ts-expect-error Vite transforms query-string image imports at build time
+import heroJpg from "../../assets/images/hero.jpg?w=1920";
 // @ts-expect-error Vite transforms query-string image imports at build time
 import heroJpgSrcSet from "../../assets/images/hero.jpg?w=640&w=960&w=1280&w=1600&w=1920&as=srcset";
 // @ts-expect-error Vite transforms query-string image imports at build time
@@ -61,13 +63,6 @@ const Hero = () => {
                                             </picture>
                                         ))}
                 </div>
-
-                <div className="relative z-10">
-                    <NavBar />
-
-                </div>
-            
-
             <div className="flex flex-col md:flex-row items-center justify-center backdrop-blur-sm absolute bottom-0 left-0 w-full md:h-[40vh] h-auto   lg:gap-x-20 md:gap-0 gap-2 text-white text-center md:text-left bg-black/30 border-t-2 border-[#799434] pt-10">
                 <div className="md:pr-20">
                     <h1 className="text-[1.75rem] md:text-[2rem] lg:text-[2.25rem] md:pl-10">About</h1>

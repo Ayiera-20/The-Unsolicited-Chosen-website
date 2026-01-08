@@ -10,7 +10,7 @@ const SectionTransition = ({ children, bgColor = "#184E35" }: SectionTransitionP
   return (
      <div className="relative overflow-hidden">
       <motion.div
-        className="absolute top-0 left-0 w-full h-full z-50 origin-bottom"
+        className="absolute top-0 left-0 w-full h-full z-50 origin-bottom pointer-events-none"
         style={{ backgroundColor: bgColor }}
         initial={{ scaleY: 1 }}
         animate={{ scaleY: 0 }}

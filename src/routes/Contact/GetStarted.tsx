@@ -1,6 +1,7 @@
 import { FaFacebook, FaInstagram, FaTwitter, FaLinkedin } from 'react-icons/fa';
 import { SiTiktok } from 'react-icons/si';
-import sgoals from "../../assets/images/sustainable-development-goals-still-life copy.jpg"
+// @ts-expect-error Vite transforms query-string image imports at build time
+import sgoals from "../../assets/images/sustainable-development-goals-still-life copy.jpg?w=1600"
 import AnimatedText from '../../components/AnimatedText';
 import ScrollImageReveal from '../../components/ScrollRevealImage';
 
@@ -8,7 +9,7 @@ const GetStarted = ()  => {
     return(
         <div className="flex flex-col md:flex-row justify-center items-center px-20 lg:py-30 py-15 gap-15 text-bold">
             <ScrollImageReveal>
-                <img className='lg:w-120 md:w-80 h-auto' src={sgoals} alt="" />
+                <img className='lg:w-120 md:w-80 h-auto' src={sgoals} alt="" loading="lazy" decoding="async" />
             </ScrollImageReveal>
            <div>
             <h2 className="lg:text-[2.5rem] text-[2rem] pb-6 text-bold text-[#184E35] slide">Let’s get started</h2>

@@ -10,6 +10,8 @@ const InspiringFacts = () => {
                 src={trash}
                 alt="Nairobi clean-up"
                 className="lg:w-170 lg:h-131 md:h-148 h-80 w-full object-cover"
+                loading="lazy"
+                decoding="async"
                 />
             
                 <div className="bg-[#184E35] w-full lg:w-1/3 space-y-4 text-white px-10  py-6  md:text-base text-sm lg:h-131 lg:max-h-131">

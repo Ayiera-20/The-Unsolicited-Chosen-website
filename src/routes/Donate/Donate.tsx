@@ -1,5 +1,6 @@
 import ReusableHeroSection from "../../components/ReusableHeroSection";
-import handsJpg from "../../assets/images/hands-different-skin-color-ethnicities-coming-together-sign-diversity.jpg"
+// @ts-expect-error Vite transforms query-string image imports at build time
+import handsJpg from "../../assets/images/hands-different-skin-color-ethnicities-coming-together-sign-diversity.jpg?w=1920"
 // @ts-expect-error Vite transforms query-string image imports at build time
 import handsJpgSrcSet from "../../assets/images/hands-different-skin-color-ethnicities-coming-together-sign-diversity.jpg?w=640&w=960&w=1280&w=1600&w=1920&as=srcset"
 // @ts-expect-error Vite transforms query-string image imports at build time

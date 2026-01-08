@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { IoClose } from "react-icons/io5";
 import { PiListBold } from "react-icons/pi"; 
 import { Link } from "react-router-dom";
@@ -9,6 +9,24 @@ interface DrawerMenu {
 
 const DrawerMenu = ({ className = "" }: DrawerMenu) => {
   const [isOpen, setIsOpen] = useState(false);
+
+  useEffect(() => {
+    if (!isOpen) return;
+    const previousOverflow = document.body.style.overflow;
+    document.body.style.overflow = 'hidden';
+
+    const onKeyDown = (e: KeyboardEvent) => {
+      if (e.key === 'Escape') {
+        setIsOpen(false);
+      }
+    };
+
+    window.addEventListener('keydown', onKeyDown);
+    return () => {
+      document.body.style.overflow = previousOverflow;
+      window.removeEventListener('keydown', onKeyDown);
+    };
+  }, [isOpen]);
 
   const handleToggle = () => {
     setIsOpen(!isOpen);
@@ -25,11 +43,23 @@ const DrawerMenu = ({ className = "" }: DrawerMenu) => {
         <PiListBold size={20} className="md:w-9 md:h-9 text-white  md:mx-8" />
       </div>
 
+      {isOpen && (
+        <button
+          type="button"
+          aria-label="Close menu"
+          className="fixed inset-0 bg-black/40 z-[10000] lg:hidden"
+          onClick={handleClose}
+        />
+      )}
+
       {/* Drawer */}
       <div
-        className={`fixed top-0 left-0 h-full md:w-1/2 w-3/4 bg-[#184E35] shadow-lg  p-6 transform transition-transform duration-300 ease-in-out z-100 ${
-          isOpen ? "translate-x-0" : "-translate-x-full z-100"
+        className={`fixed top-0 left-0 h-dvh md:w-1/2 w-3/4 shadow-lg p-6 transform transition-transform duration-300 ease-in-out z-[10001] overflow-y-auto ${
+          isOpen ? "translate-x-0" : "-translate-x-full"
         } lg:hidden`}
+        style={{ backgroundColor: '#184E35' }}
+        role="dialog"
+        aria-modal="true"
       >
         <div className="flex justify-end">
           <button

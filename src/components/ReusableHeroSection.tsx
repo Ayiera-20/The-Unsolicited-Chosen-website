@@ -1,5 +1,3 @@
-import NavBar from "./navbar";
-
 type HeroImageSource = {
   src: string;
   srcSet?: string;
@@ -50,11 +48,7 @@ const ReusableHeroSection = ({
         />
       </picture>
 
-      <div className="absolute inset-0 z-10 bg-black/50"></div>
-
-      <div className="relative z-20">
-        <NavBar />
-      </div>
+      <div className="absolute inset-0 z-10 bg-black/50 pointer-events-none"></div>
       
       <div className="items-center relative z-20 flex flex-col justify-center h-full text-white text-center md:px-0 px-4 head-fade">
         <h1 className="text-[1.75rem] md:text-[3.125rem] lg:text-[4rem] pb-6 text-[#F5F1E3] slide">{heading}</h1>

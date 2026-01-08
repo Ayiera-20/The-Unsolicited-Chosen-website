@@ -1,7 +1,10 @@
 
-import vegetation from "../../assets/images/abstract-creative-3d-sphere-with-vegetation.jpg"
-import children from "../../assets/images/children.jpg"
-import garbageCollection from "../../assets/images/collectingGarbage.jpg"
+// @ts-expect-error Vite transforms query-string image imports at build time
+import vegetation from "../../assets/images/abstract-creative-3d-sphere-with-vegetation.jpg?w=1400"
+// @ts-expect-error Vite transforms query-string image imports at build time
+import children from "../../assets/images/children.jpg?w=900"
+// @ts-expect-error Vite transforms query-string image imports at build time
+import garbageCollection from "../../assets/images/collectingGarbage.jpg?w=1200"
 import { motion } from "framer-motion";
 import { useRef } from "react";
 import { useInView } from "framer-motion";
@@ -32,7 +35,7 @@ const CleanEnvironment = () => {
     initial={{ backgroundColor: "#ffffff" }}
     animate={{ backgroundColor: isInView ? "#E6FFFA" : "#F5FAF6" }}
     transition={{ duration: 1.2 }}
-    className="md:px-20 py-20"
+    className="md:px-20 px-6 sm:px-10 py-20"
     style={{ backgroundColor: isInView ? "#E6FFFA" : "#F5FAF6" }} 
     >
 
@@ -40,7 +43,7 @@ const CleanEnvironment = () => {
             <h2 className="lg:text-[3.125rem] md:text-[2.5rem] text-[2rem] text-center md:pb-25 text-[#184E35] slide">Why clean environment matters</h2>
             <div className="flex flex-col lg:flex-row lg:gap-50 md:gap-30 justify-center items-center lg:items-start">
                 
-                <div className="lg:sticky lg:top-20 relative flex  w-[400px] h-[500px] items-center md:items-start justify-center md:justify-items-start">
+                <div className="lg:sticky lg:top-20 relative flex w-full max-w-[400px] h-[420px] sm:h-[500px] items-center md:items-start justify-center md:justify-items-start">
                     <div className="absolute bg-white lg:w-113 lg:h-182 md:w-100 md:h-100 w-60 h-80  bg-cover bg-center bg-no-repeat animate-zoom-out"
                         style={{backgroundImage: `url(${vegetation})`}}>
                     </div>

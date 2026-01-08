@@ -2,7 +2,6 @@ import Footer from "../../components/footer";
 import waste from "../../assets/images/volunteering-activism-eco-aware-african-girl-is-cleaning-park-she-is-putting-trash-into-bag.jpg"
 import partnership from "../../assets/images/pexels-shvetsa-5029853.jpg"
 import waste2 from "../../assets/images/freepik__the-style-is-candid-image-photography-with-natural__58390.jpeg"
-import NavBar from "../../components/navbar";
 import { Link } from 'react-router-dom';
 import AnimatedText from "../../components/AnimatedText";
 
@@ -20,7 +19,7 @@ const WhatWeDo = () => {
     return (
         <div>
             
-                <NavBar forceSolidBg={true} />
+
 
             
             <div className="md:py-30 py-15 flex flex-col items-center justify-center head-fade">
@@ -35,9 +34,9 @@ const WhatWeDo = () => {
                 
 
 
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 lg:gap-10 lg:mb-20  lg:px-2">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 lg:gap-10 lg:mb-20 px-6 md:px-10 lg:px-2">
                 {items.map((item, index) => (
-                    <div key={index} className="relative lg:h-120 lg:w-150 md:w-100 h-80 w-80 bg-cover bg-center bg-no-repeat text-center flex justify-center  items-center text-white group transition duration-300 flex-col"
+                    <div key={index} className="relative h-80 w-full max-w-[20rem] sm:max-w-[24rem] md:max-w-none md:h-96 bg-cover bg-center bg-no-repeat text-center flex justify-center items-center text-white group transition duration-300 flex-col mx-auto"
                         style={{backgroundImage: `url(${item.Image})`}}>
                             <div className="absolute inset-0 bg-black/70 transition duration-300"></div>
                             <p className="relative lg:text-[2rem] text-[1.25rem] md:font-medium group-hover:opacity-0">{item.text}</p>

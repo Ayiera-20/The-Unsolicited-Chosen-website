@@ -3,7 +3,8 @@ import {
   FaLinkedin,
   FaInstagram,
 } from "react-icons/fa";
-import profile from "../../assets/images/woman-floral-shirt-smiling.jpg"
+// @ts-expect-error Vite transforms query-string image imports at build time
+import profile from "../../assets/images/woman-floral-shirt-smiling.jpg?w=800"
 import AnimatedText from "../../components/AnimatedText";
 
 
@@ -68,7 +69,7 @@ const Team = () => {
                     {teamMembers.map((member, index) => (
                         <AnimatedText>
                         <div key={index} className="flex flex-col lg:flex-row gap-6">
-                            <img className="w-45 h-auto" src ={member.image} alt={member.name} />
+                            <img className="w-45 h-auto" src ={member.image} alt={member.name} loading="lazy" decoding="async" />
                             <div className="space-y-4">
                                 <h3 className="text-[#A3B18A] lg:text-lg  md:text-base text-sm ">{member.role}</h3>
                                 <p className="lg:text-2xl md:text-xl text-lg">{member.name}</p>

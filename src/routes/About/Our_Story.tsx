@@ -1,4 +1,5 @@
-import sustainable from "../../assets/images/sustainable-development-goals-still-life.jpg"
+// @ts-expect-error Vite transforms query-string image imports at build time
+import sustainable from "../../assets/images/sustainable-development-goals-still-life.jpg?w=1600"
 import person from "../../assets/images/pexels-safari-consoler-3290243-12411818.jpg"
 import AnimatedText from "../../components/AnimatedText"
 import ScrollImageReveal from "../../components/ScrollRevealImage"
@@ -9,7 +10,7 @@ const OurStory = () => {
             <h2 className="lg:text-[3.125rem] md:text-[2.5rem] text-[2rem] text-[#184E35] mb-20 text-center slide">Our Story</h2>
             <div className="flex flex-col lg:flex-row gap-20">
                 <ScrollImageReveal>
-                    <img className="md:w-auto md:h-auto" src={sustainable} alt="" />
+                    <img className="md:w-auto md:h-auto" src={sustainable} alt="" loading="lazy" decoding="async" />
                 </ScrollImageReveal>
                 <AnimatedText>
                     <div className="gap-y-8 lg:px-10 flex flex-col items-center justify-center">
@@ -30,7 +31,7 @@ const OurStory = () => {
                 </div>
                 </AnimatedText>
                 
-                <img className="md:w-78 md:h-117 animate-zoom-in" src={person} alt="" />
+                <img className="md:w-78 md:h-117 animate-zoom-in" src={person} alt="" loading="lazy" decoding="async" />
 
             </div>
 

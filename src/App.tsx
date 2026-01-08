@@ -1,4 +1,4 @@
-import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import { BrowserRouter, Route, Routes, useLocation } from 'react-router-dom'
 import './App.css'
 import Home from './routes/Home/Home'
 import About from './routes/About/About'
@@ -8,28 +8,36 @@ import ContactUs from './routes/Contact/ContactUs'
 import Donate from './routes/Donate/Donate'
 import AffordableWaste from './routes/What_We_Do/WhatWeDoPages/AffrordableWaste'
 import ScrollToTop from './components/scrollTop'
+import NavBar from './components/navbar'
 
-
-function App() {
-
+function AppShell() {
+  const location = useLocation();
+  const forceSolidBg = location.pathname.startsWith('/whatwedo');
 
   return (
     <>
       {/* <CustomCursor /> */}
-      <BrowserRouter basename={import.meta.env.BASE_URL}>
+      <NavBar forceSolidBg={forceSolidBg} />
       <ScrollToTop />
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="about" element={<About />} />
-          <Route path="whatwedo" element={<WhatWeDo />} />
-          <Route path="getinvolved" element={<GetInvolved />} />
-          <Route path="contact" element={<ContactUs />} />
-          <Route path="donate" element={<Donate/>} />
-          <Route path="affordablewaste" element={<AffordableWaste/>} />
-        </Routes>
-      </BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="about" element={<About />} />
+        <Route path="whatwedo" element={<WhatWeDo />} />
+        <Route path="getinvolved" element={<GetInvolved />} />
+        <Route path="contact" element={<ContactUs />} />
+        <Route path="donate" element={<Donate />} />
+        <Route path="affordablewaste" element={<AffordableWaste />} />
+      </Routes>
     </>
-  )
+  );
+}
+
+function App() {
+  return (
+    <BrowserRouter basename={import.meta.env.BASE_URL}>
+      <AppShell />
+    </BrowserRouter>
+  );
 }
 
 export default App

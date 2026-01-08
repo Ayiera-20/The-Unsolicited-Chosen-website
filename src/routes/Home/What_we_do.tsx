@@ -35,7 +35,7 @@ const WhatWeDo = () => {
                 {items.map((item, index) => (
                     <div key={index} className="flex flex-col justify-center items-center text-center md:gap-4 gap-2 h-full px-4 lg:py-8 pt-6 md:pb-2 shadow-xl border-1 border-gray-300 rounded-xl">
                         <AnimatedText className="flex flex-col justify-center items-center text-center md:gap-4 gap-2 h-full">
-                            <img className="w-6 h-6 lg:w-12 lg:h-12 mx-auto block mb-4" src={item.icon} alt={item.title} />
+                            <img className="w-6 h-6 lg:w-12 lg:h-12 mx-auto block mb-4" src={item.icon} alt={item.title} loading="lazy" decoding="async" />
                             <p className="lg:text-lg  md:text-base text-sm font-bold sub-sub-headings text-[#184E35]">{item.title}</p>
                             <p className="md:text-[1rem] text-sm w-71 hidden lg:block">{item.description}</p>
                             <a className="lg:hidden md:text-base text-sm font-bold pb-10" href="">Read More</a>

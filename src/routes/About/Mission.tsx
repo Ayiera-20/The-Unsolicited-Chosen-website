@@ -66,7 +66,13 @@ const Mission = () => {
                 
             </div>
             <ScrollImageReveal>
-            <img className="max-w-2xl md:h-150 h-auto md:pt-20 pt-10 animate-zoom-out" src={clean} alt="" />
+                        <img
+                            className="w-full max-w-full h-auto md:pt-20 pt-10 animate-zoom-out object-cover"
+                            src={clean}
+                            alt="Community cleanup volunteers"
+                            loading="lazy"
+                            decoding="async"
+                        />
             </ScrollImageReveal>
             
         </div>

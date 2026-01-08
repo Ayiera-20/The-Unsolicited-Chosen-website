@@ -40,18 +40,18 @@ export default function NavBar({ forceSolidBg = false }: NavBarProps) {
     return (
         <div
       className={`
-        fixed top-0 left-0 w-full z-60 
+        fixed top-0 left-0 w-full z-[9999] pointer-events-auto
         transition-all duration-300 hover:bg-[#184E35]
         ${scrollDirection === "down" ? "-translate-y-full" : "translate-y-0"} 
         ${bgColor}
       `}
     >
-             <div className="flex lg:justify-between lg:gap-8 lg:py-8">
-                <div className="flex items-center gap-x-6">
+               <div className="flex items-center justify-between px-4 py-2 md:px-8 md:py-3 lg:gap-8 lg:py-3">
+                 <div className="flex items-center gap-x-6">
                   <DrawerMenu />
                 </div>
                 <div className='hidden lg:flex -ml-10'>
-                  <img className='h-35 w-35 object-cover rounded-full -mt-8' src={logo} alt="logo" />
+                  <img className='h-20 w-20 object-cover rounded-full' src={logo} alt="logo" decoding="async" />
                   <p className='text-xl logo-text text-[#F5F1E3] font-bold'>THE UNSOLICITED <br></br> CHOSEN</p>
                 </div>
                  
@@ -65,7 +65,7 @@ export default function NavBar({ forceSolidBg = false }: NavBarProps) {
               
                     </ul>
                 </nav>
-                <div className="gap-x-4  hidden lg:flex pr-10">
+                <div className="gap-x-4 hidden lg:flex pr-10">
                   <Link to= "/donate">
                   <button className="py-2.5 px-6 rounded-full border-2 border-[#A3B18A] text-white hover:bg-[#A3B18A] transition-transform duration-[1000ms] hover:scale-110 hover:text-black">Donate Now</button>
                   </Link>

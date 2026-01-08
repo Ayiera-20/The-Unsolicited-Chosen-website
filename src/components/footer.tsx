@@ -1,6 +1,7 @@
 import { FaFacebook, FaInstagram, FaTwitter, FaLinkedin } from 'react-icons/fa';
 import { SiTiktok } from 'react-icons/si';
-import bgImage from "../assets/images/nature.jpg"
+// @ts-expect-error Vite transforms query-string image imports at build time
+import bgImage from "../assets/images/nature.jpg?w=1920"
 import { Link } from 'react-router-dom';
 import logo from '../assets/images/Unsolo2b (1).jpg'
 
@@ -11,8 +12,8 @@ const Footer = () =>{
         style={{backgroundImage: `url(${bgImage})`}}>
             <div className="absolute inset-0 bg-[#184E35]/90"></div>
             <div className='relative z-10 flex flex-wrap lg:flex-nowrap gap-y-8'>
-                <div className='flex flex-col w-full lg:text-lg md:text-base text-sm items-center text-center lg:text-left justify-center lg:justify-items-start lg:items-start'>
-                    <img className='h-30 w-30 mb-4 object-cover object-center' src={logo} alt="" />
+                <div className='flex flex-col w-full lg:flex-1 lg:text-lg md:text-base text-sm items-center text-center lg:text-left justify-center lg:justify-items-start lg:items-start'>
+                    <img className='h-30 w-30 mb-4 object-cover object-center' src={logo} alt="" loading="lazy" decoding="async" />
                     <p>The Unsolicited Chosen</p>
                     <p>Nairobi, Kenya</p>
                     <div className=' flex flex-col'>
@@ -32,35 +33,35 @@ const Footer = () =>{
                         </div>
                     </div>
                 </div>
-                <div className='w-1/2 md:w-1/3 lg:w-full flex flex-col gap-4 lg:text-lg md:text-base text-sm'>
+                <div className='w-1/2 md:w-1/3 lg:flex-1 flex flex-col gap-4 lg:text-lg md:text-base text-sm'>
                     <p className='sub-sub-headings lg:text-xl md:text-lg text-[1rem] font-semibold'>Navigation</p>
                     <a className='hover:text-[#818F39] transition duration-300' href="">Home</a>
                     <a className='hover:text-[#818F39] transition duration-300' href="">About Us</a>
                     <a className='hover:text-[#818F39] transition duration-300' href="">What we do</a>
                     <a className='hover:text-[#818F39] transition duration-300' href="">Programs</a> 
                 </div>
-                 <div className='w-1/2 md:w-1/3 lg:w-full flex flex-col gap-4 lg:text-lg md:text-base text-sm'>
+                 <div className='w-1/2 md:w-1/3 lg:flex-1 flex flex-col gap-4 lg:text-lg md:text-base text-sm'>
                     <p className='sub-sub-headings lg:text-xl md:text-lg text-[1rem] font-semibold'>Quick Links</p>
                     <a className='hover:text-[#818F39] transition duration-300' href="">Home</a>
                     <a className='hover:text-[#818F39] transition duration-300' href="">About Us</a>
                     <a className='hover:text-[#818F39] transition duration-300' href="">What we do</a>
                     <a className='hover:text-[#818F39] transition duration-300' href="">Programs</a> 
                 </div>
-                 <div className='w-1/2 md:w-1/3 lg:w-full flex flex-col gap-4 lg:text-lg md:text-base text-sm'>
+                 <div className='w-1/2 md:w-1/3 lg:flex-1 flex flex-col gap-4 lg:text-lg md:text-base text-sm'>
                     <p className='sub-sub-headings lg:text-xl md:text-lg text-[1rem] font-semibold '>Explore</p>
                     <a className='hover:text-[#818F39] transition duration-300' href="">Home</a>
                     <a className='hover:text-[#818F39] transition duration-300' href="">About Us</a>
                     <a className='hover:text-[#818F39] transition duration-300' href="">What we do</a>
                     <a className='hover:text-[#818F39] transition duration-300' href="">Programs</a> 
                 </div>
-                <div className='w-1/2 md:w-1/3 lg:w-full flex flex-col mb-24 gap-4 lg:text-lg md:text-base text-sm'>
+                <div className='w-1/2 md:w-1/3 lg:flex-1 flex flex-col mb-24 gap-4 lg:text-lg md:text-base text-sm'>
                     <p className='sub-sub-headings sub-sub-headings lg:text-xl md:text-lg text-[1rem] font-semibold'>Blog</p>
                     <a className='hover:text-[#818F39] transition duration-300' href="hover:text-[#afdfaa]">Home</a>
                     <a className='hover:text-[#818F39] transition duration-300' href="">About Us</a>
                     <a className='hover:text-[#818F39] transition duration-300' href="">What we do</a>
                     <a className='hover:text-[#818F39] transition duration-300' href="">Programs</a> 
                 </div>
-                <div className='w-full md:w-1/3 lg:w-full flex flex-col  gap-4 lg:text-lg md:text-base text-sm'>
+                <div className='w-full md:w-1/3 lg:flex-1 flex flex-col gap-4 lg:text-lg md:text-base text-sm'>
                     <p className='sub-sub-headings sub-sub-headings lg:text-xl md:text-lg text-[1rem] font-semibold'>Information</p>
                     <a className='hover:text-[#818F39] transition duration-300' href="">+254 757 802 807</a>
                     <a className='hover:text-[#818F39] transition duration-300' href="">theunsolicitedchosen@gmail.com</a>

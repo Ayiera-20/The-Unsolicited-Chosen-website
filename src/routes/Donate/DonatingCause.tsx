@@ -17,7 +17,7 @@ const DonatingCause = () =>{
                     <AnimatedText>
                     <div key={index} className="bg-white rounded-2xl flex md:gap-3 shadow-md py-8 max-w-md transition-all duration-300 ease-in-out hover:-translate-y-1">
                         <div className="px-4">
-                            <img className="bg-[#F5F1E3] rounded-full p-2 w-15 h-auto" src={item.icon} alt="" />
+                            <img className="bg-[#F5F1E3] rounded-full p-2 w-15 h-auto" src={item.icon} alt="" loading="lazy" decoding="async" />
                         </div>
                         
                         <div className="px-2 lg:px-0">

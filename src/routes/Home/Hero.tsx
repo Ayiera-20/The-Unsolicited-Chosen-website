@@ -3,7 +3,6 @@ import heroJpg from "../../assets/images/hero.jpg"
 import heroJpgSrcSet from "../../assets/images/hero.jpg?w=640&w=960&w=1280&w=1600&w=1920&as=srcset"
 // @ts-expect-error Vite transforms query-string image imports at build time
 import heroWebpSrcSet from "../../assets/images/hero.jpg?format=webp&w=640&w=960&w=1280&w=1600&w=1920&as=srcset"
-import NavBar from "../../components/navbar";
 import SectionTransition from "../../components/transition";
 
 
@@ -29,11 +28,6 @@ const HeroSection = () => {
 
 
       <div className="absolute inset-0 bg-black/50 z-10 pointer-events-none" />
-
-
-      <div className="relative z-20">
-        <NavBar />
-      </div>
 
       <div className="relative z-10 flex flex-col justify-center items-center h-full text-white text-center px-4">
         <p className="font-bold text-[1.5rem] md:text-[1.75rem] lg:text-[2rem]">Welcome</p>
