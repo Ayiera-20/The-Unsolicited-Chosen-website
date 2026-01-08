@@ -61,7 +61,7 @@ export default function NavBar({ forceSolidBg = false }: NavBarProps) {
                         <Link to="/about" className="hover:text-[#818F39] transition-transform duration-[1000ms] hover:scale-110 active:text-[#818F39]">About</Link>
                         <Link to="/whatwedo" className="hover:text-[#818F39] transition-transform duration-[1000ms] hover:scale-110 active:text-[#818F39]">What we do</Link>
                         <Link to="/getinvolved" className="hover:text-[#818F39] transition-transform duration-[1000ms] hover:scale-110 active:text-[#818F39]">Get Involved</Link>
-                        <Link to="/" className="hover:text-[#818F39] transition-transform duration-[1000ms] hover:scale-110 active:text-[#818F39]">Projects</Link>
+                        {/* <Link to="/" className="hover:text-[#818F39] transition-transform duration-[1000ms] hover:scale-110 active:text-[#818F39]">Projects</Link> */}
               
                     </ul>
                 </nav>

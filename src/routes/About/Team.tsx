@@ -3,56 +3,54 @@ import {
   FaLinkedin,
   FaInstagram,
 } from "react-icons/fa";
-// @ts-expect-error Vite transforms query-string image imports at build time
-import profile from "../../assets/images/woman-floral-shirt-smiling.jpg?w=800"
 import AnimatedText from "../../components/AnimatedText";
 
 
 const teamMembers = [
 
-    {image:profile, role: "Founder", name: "Jenny Otinda", 
+    {image:"https://api.dicebear.com/7.x/notionists/svg?seed=Jenny&backgroundColor=f5f1e3&skinColor=brown", role: "Founder", name: "Jenny Otinda", 
         description: "Team volunteering not only allows for greater impact but also fosters camaraderie and teamwork among participants.",
         socialLinks:{
         twitter: "https://twitter.com",
         instagram: "https://instagram.com",
         linkedin: "https://linkedin.com"
     } },
-    {image:profile,role: "Software Developer", name: "Miriam Ayiera", 
+    {image:"https://api.dicebear.com/7.x/notionists/svg?seed=Miriam&backgroundColor=f5f1e3&skinColor=brown",role: "Software Developer", name: "Miriam Ayiera", 
         description: "Team volunteering not only allows for greater impact but also fosters camaraderie and teamwork among participants.",
         socialLinks:{
         twitter: "https://twitter.com",
         instagram: "https://instagram.com",
         linkedin: "https://linkedin.com"
     } },
-     {image:profile, role: "PR", name: "Hope", 
+     {image:"https://api.dicebear.com/7.x/notionists/svg?seed=Hope&backgroundColor=f5f1e3&skinColor=brown", role: "PR", name: "Hope", 
         description: "Team volunteering not only allows for greater impact but also fosters camaraderie and teamwork among participants.",
         socialLinks:{
         twitter: "https://twitter.com",
         instagram: "https://instagram.com",
         linkedin: "https://linkedin.com"
     } },
-     {image:profile, role: "Finance", name: "John", 
+     {image:"https://api.dicebear.com/7.x/notionists/svg?seed=John&backgroundColor=f5f1e3&skinColor=brown", role: "Finance", name: "John", 
         description: "Team volunteering not only allows for greater impact but also fosters camaraderie and teamwork among participants.",
         socialLinks:{
         twitter: "https://twitter.com",
         instagram: "https://instagram.com",
         linkedin: "https://linkedin.com"
     } },
-     {image:profile, role: "Graphic Designer", name: "Jackline", 
+     {image:"https://api.dicebear.com/7.x/notionists/svg?seed=Jackline&backgroundColor=f5f1e3&skinColor=brown", role: "Graphic Designer", name: "Jackline", 
         description: "Team volunteering not only allows for greater impact but also fosters camaraderie and teamwork among participants.",
         socialLinks:{
         twitter: "https://twitter.com",
         instagram: "https://instagram.com",
         linkedin: "https://linkedin.com"
     } },
-    {image:profile, role: "Software Developer || Graphic Designer", name: "Jeoffrey", 
+    {image:"https://api.dicebear.com/7.x/notionists/svg?seed=Jeoffrey&backgroundColor=f5f1e3&skinColor=brown", role: "Software Developer || Graphic Designer", name: "Jeoffrey", 
         description: "Team volunteering not only allows for greater impact but also fosters camaraderie and teamwork among participants.",
         socialLinks:{
         twitter: "https://twitter.com",
         instagram: "https://instagram.com",
         linkedin: "https://linkedin.com"
     } },
-    {image:profile, role: "Admin", name: "Nicole", 
+    {image:"https://api.dicebear.com/7.x/notionists/svg?seed=Nicole&backgroundColor=f5f1e3&skinColor=brown", role: "Admin", name: "Nicole", 
         description: "Team volunteering not only allows for greater impact but also fosters camaraderie and teamwork among participants.",
         socialLinks:{
         twitter: "https://twitter.com",

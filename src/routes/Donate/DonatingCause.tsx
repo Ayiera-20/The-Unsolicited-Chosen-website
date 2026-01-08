@@ -1,10 +1,10 @@
 import tree from "../../assets/images/tree-planting-initiative.svg"
 import AnimatedText from "../../components/AnimatedText"
 const items = [
-    {icon: tree, title: "Title", description:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."},
-    {icon: tree, title: "Title", description:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."},
-    {icon: tree, title: "Title", description:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."},
-    {icon: tree, title: "Title", description:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."}
+    {icon: tree, title: "Power community cleanups", description:"Fuel gloves, bags, logistics, and coordination for regular cleanups in our neighborhoods."},
+    {icon: tree, title: "Grow a greener city", description:"Support tree planting and greener public spaces that improve health and wellbeing."},
+    {icon: tree, title: "Educate and equip families", description:"Help fund community education so more people can practice safe disposal and cleanliness."},
+    {icon: tree, title: "Strengthen local partnerships", description:"Enable collaborations with schools, businesses, and leaders to expand impact sustainably."}
 ]
 
 const DonatingCause = () =>{

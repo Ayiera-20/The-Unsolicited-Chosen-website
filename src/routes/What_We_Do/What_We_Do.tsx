@@ -6,12 +6,12 @@ import { Link } from 'react-router-dom';
 import AnimatedText from "../../components/AnimatedText";
 
 const items = [
-    {Image: waste, text:"Affordable Waste Solutions", link:"/affordablewaste", readMore:"Lorem ipsum dolor sit amet, consectetur adipiscing elit"},
-    {Image: waste2, text:"eco-friendly commerce", link:"", readMore:"Lorem ipsum dolor sit amet, consectetur adipiscing elit"},
-    {Image:  waste, text:"Community Cleanups", link:"", readMore:"Lorem ipsum dolor sit amet, consectetur adipiscing elit"},
-    {Image: waste2, text:"Community Education", link:"", readMore:"Lorem ipsum dolor sit amet, consectetur adipiscing elit"},
-    {Image: partnership, text:"Strategic Partnerships", link:"", readMore:"Lorem ipsum dolor sit amet, consectetur adipiscing elit"},
-    {Image: partnership, text:"Spreading Faith & Hope", link:"", readMore:"Lorem ipsum dolor sit amet, consectetur adipiscing elit"},
+    {Image: waste, text:"Affordable Waste Solutions", link:"/affordablewaste", readMore:"Low-cost, practical waste solutions for underserved neighborhoods."},
+    {Image: waste2, text:"Eco-friendly Commerce", link:"/contact", readMore:"Promoting sustainable choices and circular practices that reduce waste."},
+    {Image: waste, text:"Community Cleanups", link:"/getinvolved", readMore:"Mobilizing volunteers to clean streets, estates, and public spaces together."},
+    {Image: waste2, text:"Community Education", link:"/contact", readMore:"Workshops and awareness campaigns that build everyday cleanliness habits."},
+    {Image: partnership, text:"Strategic Partnerships", link:"/contact", readMore:"Partnering with schools, businesses, and leaders to scale impact."},
+    {Image: partnership, text:"Spreading Faith & Hope", link:"/about", readMore:"Serving with compassion and sharing encouragement as we work."},
     
 ]
 
@@ -34,12 +34,12 @@ const WhatWeDo = () => {
                 
 
 
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 lg:gap-10 lg:mb-20 px-6 md:px-10 lg:px-2">
+			<div className="grid grid-cols-1 xl:grid-cols-2 gap-4 md:gap-6 lg:gap-8 xl:gap-10 lg:mb-20 w-full max-w-full px-10">
                 {items.map((item, index) => (
-                    <div key={index} className="relative h-80 w-full max-w-[20rem] sm:max-w-[24rem] md:max-w-none md:h-96 bg-cover bg-center bg-no-repeat text-center flex justify-center items-center text-white group transition duration-300 flex-col mx-auto"
+                    <div key={index} className="relative h-96 w-full md:h-[28rem] lg:h-[32rem] xl:h-[36rem] bg-cover bg-center bg-no-repeat text-center flex justify-center items-center text-white group transition duration-300 flex-col"
                         style={{backgroundImage: `url(${item.Image})`}}>
                             <div className="absolute inset-0 bg-black/70 transition duration-300"></div>
-                            <p className="relative lg:text-[2rem] text-[1.25rem] md:font-medium group-hover:opacity-0">{item.text}</p>
+                            <p className="relative px-4 max-w-[18rem] sm:max-w-[22rem] lg:max-w-[26rem] mx-auto leading-tight lg:text-[2rem] text-[1.25rem] md:font-medium group-hover:opacity-0">{item.text}</p>
 
                             <div className="lg:hidden relative flex flex-col justify-center items-center">
                                 <p className="lg:text-lg pt-8  md:text-base text-sm pb-4 ">{item.readMore}</p>
@@ -49,7 +49,7 @@ const WhatWeDo = () => {
 
                             {/* Hover content */}
                             <div className="bg-[#184E35] hidden absolute inset-0 lg:flex flex-col justify-center items-center opacity-0 group-hover:opacity-100 slide-up transition duration-300">
-                                <p className="relative lg:text-[2rem] md:text-[1.75rem] text-2xl font-medium pb-20 transition-transform duration-300 transform translate-y-4 group-hover:translate-y-0">{item.text}</p>
+                                <p className="relative px-6 max-w-[32rem] mx-auto leading-tight text-center lg:text-[2rem] md:text-[1.75rem] text-2xl font-medium pb-20 transition-transform duration-300 transform translate-y-4 group-hover:translate-y-0">{item.text}</p>
                                 <p className="lg:text-lg  md:text-base text-sm pb-4 transition-transform duration-300 transform translate-y-4 group-hover:translate-y-0">{item.readMore}</p>
                                 <Link to ={item.link} className="text-lg font-semibold mb-4 hover:text-[#818F39] transition-transform duration-300 transform translate-y-4 group-hover:translate-y-0">Read More  →</Link>
                             </div>

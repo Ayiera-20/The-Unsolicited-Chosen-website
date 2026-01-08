@@ -21,8 +21,8 @@ const Donate = () => {
                 alt: 'Hands together',
             }}
                     heading="Donate and make an impact"
-                    description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod "
-                    description2="tempor incididunt ut labore et dolore magna aliqua."
+                    description="Your donation helps fund community cleanups, environmental education,"
+                    description2="and practical waste solutions in Nairobi and beyond."
                     button="Join Us"
                     height="h-screen"
                     scrollToId="donation-section"
